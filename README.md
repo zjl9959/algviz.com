@@ -8,7 +8,7 @@ This repo shows the algorithm animation about interesting problems. All the anim
 |    Problem       |     Source Code    |    Animination   |
 |------------------|--------------------|------------------|
 |   [NQueens]      |   [NQueens.ipynb]  |   [NQueens.svg]  | 
-|   [SameTree]     |   [SameTree.ipynb] | [SameTree1.svg] [SameTree2.svg] |
+|   [SameTree]     |   [SameTree.ipynb] | [SameTree1.svg] [SameTree2.svg] [SameTree3.svg] |
 
 
 [NQueens]: https://leetcode.com/problems/n-queens-ii/
@@ -18,3 +18,4 @@ This repo shows the algorithm animation about interesting problems. All the anim
 [SameTree.ipynb]: notebooks/SameTree.ipynb
 [SameTree1.svg]: https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@main/animations/SameTree1.svg
 [SameTree2.svg]: https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@main/animations/SameTree2.svg
+[SameTree3.svg]: https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@main/animations/SameTree3.svg
