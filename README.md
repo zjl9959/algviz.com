@@ -9,6 +9,7 @@ This repo shows the algorithm animation about interesting problems. All the anim
 |------------------|--------------------|------------------|
 |   [NQueens]      |   [NQueens.ipynb]  |   [NQueens.svg]  | 
 |   [SameTree]     |   [SameTree.ipynb] | [SameTree1.svg] [SameTree2.svg] [SameTree3.svg] |
+|   [SmallestNumberinInfiniteSet]  | [SmallestNumberinInfiniteSet.ipynb] | [SmallestNumberinInfiniteSet.svg] |
 
 
 [NQueens]: https://leetcode.com/problems/n-queens-ii/
@@ -19,3 +20,6 @@ This repo shows the algorithm animation about interesting problems. All the anim
 [SameTree1.svg]: https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@main/animations/SameTree1.svg
 [SameTree2.svg]: https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@main/animations/SameTree2.svg
 [SameTree3.svg]: https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@main/animations/SameTree3.svg
+[SmallestNumberinInfiniteSet]: https://leetcode.com/problems/smallest-number-in-infinite-set/
+[SmallestNumberinInfiniteSet.ipynb]: notebooks/SmallestNumberinInfiniteSet.ipynb
+[SmallestNumberinInfiniteSet.svg]: https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@main/animations/SmallestNumberinInfiniteSet.svg
