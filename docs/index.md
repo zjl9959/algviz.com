@@ -1,8 +1,6 @@
 # Welcome to algviz.com
 
-## 🎈Algviz editor will be coming soon!
-
-**`Algviz editor` is an online code runner to run your Python code with algviz [interfaces](https://algviz.readthedocs.io/en/latest/api.html#module-algviz) in a web browser. The editor will support exporting the SVG with all the display objects and animation sequences for your code, please stay tuned!**
+For test: [doc](temp/test.md)
 
 ## Introduce
 
