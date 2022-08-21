@@ -76,6 +76,7 @@ pip install algviz
     ```
 3. 如果你看到了下面的执行结果：
     > Congratulations, everything is OK !!!
+    
     那么你的本地配置环境一切正常，否则，你可以从[这里](https://github.com/zjl9959/algviz/issues)报告你的错误。
 
 ## 许可证
@@ -85,9 +86,9 @@ Algviz 使用 GNU GPLv3 [许可证](https://github.com/zjl9959/algviz/blob/main/
 ## 相关链接
 
 + 网站主页: https://algviz.com/
-+ GitHub 仓库地址: https://github.com/zjl9959/algviz
++ GitHub 项目地址: https://github.com/zjl9959/algviz
 + PyPi 主页: https://pypi.org/project/algviz/
-+ ReadtheDocs API 介绍: https://algviz.readthedocs.io/en/latest/index.html
++ API 接口介绍: https://algviz.readthedocs.io/en/latest/index.html
 
 
 [Vector]: https://algviz.readthedocs.io/en/latest/api.html#algviz.vector.Vector
