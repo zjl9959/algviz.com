@@ -2,6 +2,8 @@
 
 ## 关于 Algviz
 
+中文介绍[文档](common/README-zh.md)
+
 <div align=center><img src="https://cdn.jsdelivr.net/gh/zjl9959/algviz@main/docs/images/logo_v1.svg"/></div>
 
 Algviz 是一个用于生成算法可视化动画的 Python 库，它可以和 Jupyter-notebook 很好的集成在一起。
