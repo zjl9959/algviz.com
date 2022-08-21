@@ -1,6 +1,6 @@
 # Welcome to algviz.com
 
-For test: [doc](temp/test.md)
+中文介绍[文档](common/README-zh.md)
 
 ## Introduce
 
