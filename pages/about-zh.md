@@ -9,8 +9,6 @@ categories: help
 
 ## 基本介绍
 
-<div align=center><img src="https://cdn.jsdelivr.net/gh/zjl9959/algviz@main/docs/images/logo_v1.svg"/></div>
-
 Algviz 是一个用于生成算法可视化动画的 Python 库，它可以和 [Jupyter-notebook](https://jupyter.org/) 很好的集成在一起。
 
 Algviz 支持的数据结构十分丰富，它可以为向量 (`vector`)、表格 (`table`)、链表 (`linked list`)、树 (`tree`)、拓扑图(`graph`) 等数据结构生成可视化的动画。你只需要在你的 Python 代码中插入一些 algviz 相关的[接口](https://algviz.readthedocs.io/en/latest/api.html#module-algviz)，便可以轻松的在你的 Jupyter-notebook 中观看这些数据结构的变化过程。例如，下面的动画就展示了一个使用 algviz 进行可视化的[冒泡排序算法](https://en.wikipedia.org/wiki/Bubble_sort):

@@ -3,7 +3,7 @@
 ##########################
 
 # Website info
-title: Algviz.com
+title: Algviz
 description: >- # this means to ignore newlines until "baseurl:"
   Bring alive animations into your code.
 baseurl: "" # the subpath of your site, e.g. /blog
