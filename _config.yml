@@ -1,5 +1,56 @@
-remote_theme: pages-themes/dinky@v0.2.0
+##########################
+# Basic configurations   #
+##########################
+
+# Website info
+title: Algviz.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Bring alive animations into your code.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://algviz.com"
+timezone: Asia/Shanghai
+encoding: "utf-8"
+
+# Author info
+github_username:  zjl9959
+repository: zjl9959/algviz.com
+since: 2022
+author: zjl9959
+email: zjl9959@gmail.com
+
+# Build settings
+theme: minima
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-title: algviz
-description: Bring alive animations into your code.
+  - jekyll-feed
+
+compress_html:
+  clippings: all
+  comments: ["<!--", "-->"]
+
+# How many blogs showed in one page: https://jekyllrb.com/docs/pagination/
+paginate: 5
+
+cdn:
+    jsdelivr:
+        enabled: false
+
+
+#############################
+#  Plugins configurations   #
+#############################
+simple_jekyll_search:
+    fulltext: false
+    limit: 5
+
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /index.html
+    label: 首页
+
+  -
+    href: /pages/about-zh.html
+    label: 关于
