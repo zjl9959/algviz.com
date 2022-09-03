@@ -32,7 +32,7 @@ paginate: 5
 
 cdn:
     jsdelivr:
-        enabled: false
+        enabled: true
 
 
 #############################
