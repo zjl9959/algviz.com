@@ -42,10 +42,17 @@ simple_jekyll_search:
     fulltext: false
     limit: 5
 
+# Markdown
+markdown: kramdown
+kramdown:
+    input: GFM
+    syntax_highlighter: rouge
+highlighter: rouge
 
-# ---------------- #
-#    Navigation    #
-# ---------------- #
+
+#####################
+#    Navigation     #
+#####################
 navs:
   -
     href: /index.html

@@ -1,11 +1,13 @@
 ---
-layout: default
-title:  "关于 algviz"
+layout: page
+title:  "关于 Algviz"
 date:   2022-08-22 20:30:12 +0800
 categories: help
 ---
 
-## 关于 Algviz
+[English](about.md)
+
+## 基本介绍
 
 <div align=center><img src="https://cdn.jsdelivr.net/gh/zjl9959/algviz@main/docs/images/logo_v1.svg"/></div>
 
