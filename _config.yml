@@ -62,3 +62,11 @@ navs:
   -
     href: /pages/about-zh.html
     label: 关于
+
+
+####################
+#    Components    #
+####################
+components:
+    word_count:
+        enabled: true
