@@ -6,7 +6,6 @@ layout: default
 {% if site.cdn.jsdelivr.enabled %}
 {% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
 {% endif %}
-<link rel="stylesheet" href="{{ assets_base_url }}/assets/css/pages/index.css">
 <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/globals/base16.monokai.css">
 <section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15}}">
     <div class="container">

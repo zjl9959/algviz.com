@@ -2,7 +2,6 @@
 layout: page
 title:  "关于 Algviz"
 date:   2022-08-22 20:30:12 +0800
-css: ['pages/index.css']
 categories: help
 ---
 

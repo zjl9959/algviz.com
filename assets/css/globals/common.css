@@ -37,6 +37,7 @@
 }
 
 .site-header {
+    background: #4183c4;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -134,7 +135,7 @@
     padding: 6px 10px 15px;
     margin-left: 1.25rem;
     font-size: 1rem;
-    color: #777
+    color: rgb(192, 192, 192)
 }
 
 .site-footer:after,.site-footer:before {
@@ -143,7 +144,7 @@
 }
 
 .site-header-nav-item:hover {
-    color: #333;
+    color: rgb(255, 255, 255);
     text-decoration: none
 }
 
