@@ -70,3 +70,10 @@ navs:
 components:
     word_count:
         enabled: true
+
+
+###################
+#    Google       #
+###################
+google:
+    analytics_id: G-4Z0KQSTDLS
