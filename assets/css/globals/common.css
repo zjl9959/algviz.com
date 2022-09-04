@@ -44,6 +44,10 @@
     border-bottom: 1px solid #eee
 }
 
+.p404 .site-header {
+    background: #777;
+}
+
 .site-header .account-switcher {
     display: inline-block;
     margin-top: -2px;
