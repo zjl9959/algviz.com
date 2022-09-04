@@ -17,6 +17,7 @@ repository: zjl9959/algviz.com
 since: 2022
 author: zjl9959
 email: zjl9959@gmail.com
+subscribe_rss: /feed.xml
 
 # Build settings
 theme: minima
