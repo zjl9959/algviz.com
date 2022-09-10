@@ -90,9 +90,15 @@
         <span class="icon-bar"></span>
       </button>
       <nav class="site-header-nav" role="navigation">
-          {% for nav in site.navs %}
-          <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
-          {% endfor %}
+          {% if page.lang == "zh" %}
+            {% for nav in site.navs.cn %}
+            <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
+            {% endfor %}
+          {% elsif page.lang == "en" %}
+            {% for nav in site.navs.en %}
+            <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
+            {% endfor %}
+          {% endif %}
       </nav>
     </div>
   </header>

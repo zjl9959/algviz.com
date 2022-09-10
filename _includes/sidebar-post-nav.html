@@ -1,5 +1,11 @@
+<!-- Localization -->
+{% if page.lang == "zh" %}
+    {% assign loc_toc = "目录" %}
+{% elsif page.lang == "en" %}
+    {% assign loc_toc = "Table of Contents" %}
+{% endif %}
 
-<h3 class="post-directory-title mobile-hidden">Table of Contents</h3>
+<h3 class="post-directory-title mobile-hidden">{{ loc_toc }}</h3>
 <div id="post-directory-module" class="mobile-hidden">
   <section class="post-directory">
   <!-- Links that trigger the jumping -->

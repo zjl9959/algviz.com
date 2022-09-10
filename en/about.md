@@ -4,9 +4,8 @@ title:  "About Algviz"
 date:   2022-08-22 20:30:12 +0800
 categories: help
 comments: false
+lang: en
 ---
-
-[中文页面](about-zh.md)
 
 ## Introduce
 

@@ -2,11 +2,18 @@
 layout: compress
 ---
 
+<!-- CND configuration for assets -->
 {% assign assets_base_url = site.url %}
 {% if site.cdn.jsdelivr.enabled %}
 {% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
 {% endif %}
-{% assign assets_images_url = '<img src="' | append: assets_base_url | append: "/images" %}
+
+<!-- CND configuration for svg animations -->
+{% assign assets_svg_url = "https://github.com/" | append: site.cdn.svg_repo | append: "/svgs" %}
+{% if site.cdn.jsdelivr.enabled %}
+{% assign assets_svg_url = "https://cdn.jsdelivr.net/gh/" | append: site.cdn.svg_repo | append: '@master' | append: "/svgs" %}
+{% endif %}
+
 {% include header.html %}
-    {{ content | replace: '<img src="/images', assets_images_url }}
+    {{ content }}
 {% include footer.html %}

@@ -1,4 +1,11 @@
-<h3>Search</h3>
+<!-- Localization -->
+{% if page.lang == "zh" %}
+    {% assign loc_search = "搜索" %}
+{% elsif page.lang == "en" %}
+    {% assign loc_search = "Search" %}
+{% endif %}
+
+<h3>{{ loc_search }}</h3>
 <div id="site_search">
     <input style="width:96%" type="text" id="search_box" placeholder="Search">
 </div>
@@ -16,6 +23,6 @@ SimpleJekyllSearch({
     noResultsText: 'No results found',
     limit: {{ site.simple_jekyll_search.limit }},
     fuzzy: false,
-    exclude: ['Welcome', 'algviz']
+    exclude: ['algviz']
 })
 </script>

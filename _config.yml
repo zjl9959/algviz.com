@@ -8,6 +8,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Bring alive animations into your code.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://algviz.com"
+lang: zh    # options: [zh, en]
 timezone: Asia/Shanghai
 encoding: "utf-8"
 
@@ -23,18 +24,29 @@ subscribe_rss: /feed.xml
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate-v2
 
 compress_html:
   clippings: all
   comments: ["<!--", "-->"]
 
-# How many blogs showed in one page: https://jekyllrb.com/docs/pagination/
-paginate: 5
+# How many blogs showed in one page
+pagination:
+  enabled: true
+  per_page: 5
 
 cdn:
     jsdelivr:
         enabled: false
+    svg_repo: zjl9959/algviz-launch
 
+collections:
+    en:
+      promalink: /en/:title/
+      output: true
+    cn:
+      promalink: /cn/:title/
+      output: true
 
 #############################
 #  Plugins configurations   #
@@ -55,13 +67,22 @@ highlighter: rouge
 #    Navigation     #
 #####################
 navs:
-  -
-    href: /index.html
-    label: 首页
+  cn:
+    -
+      href: /index.html
+      label: 主页
 
-  -
-    href: /pages/about-zh.html
-    label: 关于
+    -
+      href: /cn/about.html
+      label: 关于
+  en:
+    -
+      href: /en/index.html
+      label: Home
+
+    -
+      href: /en/about.html
+      label: About
 
 
 ####################

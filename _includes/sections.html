@@ -1,0 +1,58 @@
+<!-- Localization -->
+{% if page.lang == "zh" %}
+    {{% assign loc_topmost = "置顶" %}}
+{% elsif page.lang == "en" %}
+    {{% assign loc_topmost = "top" %}}
+{% endif %}
+<!-- Pages summary list -->
+<ol class="repo-list">
+    {% for post in paginator.posts %}
+        {% if paginator.page == 1 %}
+            {% if post.topmost == true %}
+                <li class="repo-list-item">
+                    <h3 class="repo-list-name">
+                        <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[{{ loc_topmost }}]</span>{{ post.title }}</a>
+                    </h3>
+                    <p class="repo-list-description">
+                        {{ post.excerpt | strip_html | strip }}
+                    </p>
+                    <p class="repo-list-meta">
+                        <span class="meta-info">
+                            <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
+                        </span>
+                        {% for cat in post.categories %}
+                            <span class="meta-info">
+                                <span class="octicon octicon-file-directory"></span>
+                                <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                            </span>
+                        {% endfor %}
+                    </p>
+                </li>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    {% for post in paginator.posts %}
+        <h1>{{ post.title }}</h1>
+        {% if post.topmost != true %}
+            <li class="repo-list-item">
+                <h3 class="repo-list-name">
+                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                </h3>
+                <p class="repo-list-description">
+                    {{ post.excerpt | strip_html | strip }}
+                </p>
+                <p class="repo-list-meta">
+                    <span class="meta-info">
+                        <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
+                    </span>
+                    {% for cat in post.categories %}
+                        <span class="meta-info">
+                            <span class="octicon octicon-file-directory"></span>
+                            <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                        </span>
+                    {% endfor %}
+                </p>
+            </li>
+        {% endif %}
+    {% endfor %}
+</ol>

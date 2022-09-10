@@ -2,10 +2,6 @@
 layout: default
 ---
 
-{% assign assets_base_url = site.url %}
-{% if site.cdn.jsdelivr.enabled %}
-{% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
-{% endif %}
 <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/globals/base16.monokai.css">
 <section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15, ''}}">
 <div class="container">
@@ -28,7 +24,11 @@ layout: default
           {% if site.components.word_count.enabled %}
           <span class="meta-info" style="padding-right:3px">
             <span class="octicon octicon-clock"></span>
-            共 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字，约 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 分钟
+            {% if page.lang == "zh" %}
+              共 {{ page.content | strip_html | strip_newlines | remove: " " | size }} 字，约 {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} 分钟
+            {% elsif page.lang == "en" %}
+              {{ page.content | strip_html | strip_newlines | remove: " " | size }} words in total, about {{ page.content | strip_html | strip_newlines | remove: " " | size | divided_by: 350 | plus: 1 }} minutes
+            {% endif %}
           </span>
           {% endif %}
         </div>
