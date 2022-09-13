@@ -30,23 +30,25 @@ compress_html:
   clippings: all
   comments: ["<!--", "-->"]
 
+collections:
+  en:
+    permalink: /en/:title/
+    output: true
+  cn:
+    permalink: /cn/:title/
+    output: true
+
 # How many blogs showed in one page
 pagination:
   enabled: true
   per_page: 5
+  collection: cn
+  permalink: '/cn/:title/'
 
 cdn:
     jsdelivr:
         enabled: false
     svg_repo: zjl9959/algviz-launch
-
-collections:
-    en:
-      promalink: /en/:title/
-      output: true
-    cn:
-      promalink: /cn/:title/
-      output: true
 
 #############################
 #  Plugins configurations   #
