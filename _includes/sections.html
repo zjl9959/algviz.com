@@ -1,14 +1,14 @@
 <!-- Localization -->
 {% if page.lang == "zh" %}
-    {{% assign loc_topmost = "置顶" %}}
+    {% assign loc_topmost = "置顶" %}
 {% elsif page.lang == "en" %}
-    {{% assign loc_topmost = "top" %}}
+    {% assign loc_topmost = "top" %}
 {% endif %}
 <!-- Pages summary list -->
 <ol class="repo-list">
     {% for post in paginator.posts %}
         {% if paginator.page == 1 %}
-            {% if post.topmost == true %}
+            {% if post.topmost == true and post.lang == page.lang %}
                 <li class="repo-list-item">
                     <h3 class="repo-list-name">
                         <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[{{ loc_topmost }}]</span>{{ post.title }}</a>
@@ -32,8 +32,7 @@
         {% endif %}
     {% endfor %}
     {% for post in paginator.posts %}
-        <h1>{{ post.title }}</h1>
-        {% if post.topmost != true %}
+        {% if post.topmost != true and post.lang == page.lang %}
             <li class="repo-list-item">
                 <h3 class="repo-list-name">
                     <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
