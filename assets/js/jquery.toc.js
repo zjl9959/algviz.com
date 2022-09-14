@@ -4,7 +4,6 @@
   $.fn.toc = function(options) {
     var defaults = {
       noBackToTopLinks: false,
-      title: '目录',
       minimumHeaders: 2,
       headers: 'h1, h2, h3, h4, h5, h6',
       listType: 'ul', // values: [ol|ul]
@@ -53,8 +52,7 @@
 
     var level = get_level(headers[0]),
     this_level,
-    html = "<p><strong class=\"toc-title\">" + settings.title + "</strong></p>\n";
-    html += " <"+settings.listType+" class=\"toc\">";
+    html = " <"+settings.listType+" class=\"toc\">";
     headers.on('click', function() {
       if (!settings.noBackToTopLinks) {
         window.location.hash = this.id;
