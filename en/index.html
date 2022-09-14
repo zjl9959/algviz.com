@@ -1,0 +1,23 @@
+---
+layout: default
+class: home
+comments: false
+lang: en
+pagination: 
+  enabled: true
+  collection: en
+---
+
+<section class="container content">
+  <div class="columns">
+    <div class="column two-thirds">
+      {% include sections.html %}
+    </div>
+    <div class="column one-third">
+      {% include sidebar-search.html %}
+    </div>
+  </div>
+  <div class="pagination text-align">
+    {% include paginator.html %}
+  </div>
+</section>
