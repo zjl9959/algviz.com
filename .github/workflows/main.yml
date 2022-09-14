@@ -45,8 +45,7 @@ jobs:
           bundle exec jekyll build
           
       - name: Deploy gh-pages
-        uses: sterlingwes/gh-pages-deploy-action@v1.1
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          source-directory: _site
-          deploy-branch: gh-pages
-          
+          branch: gh-pages
+          folder: _site
