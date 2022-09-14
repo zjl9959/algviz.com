@@ -1,27 +1,69 @@
----
----
-{% capture json %}
+
+
 [
-  {% for pg in site.pages %}
-  {% if pg.title != nil %}
+  
+  
     {
-      "title"    : "{{ pg.title | escape }}",
-      "url"      : "{{ site.url }}{{ pg.url }}",
-      "keywords" : "{{ pg.keywords | escape }}"
+      "title"    : "page not found",
+      "url"      : "https://algviz.com/404.html",
+      "keywords" : "404"
     } ,
-  {% endif %}
-  {% endfor %}
-
-  {% for doc in site.documents %}
+  
+  
+  
     {
-      "title"    : "{{ doc.title | escape }}",
-      "category" : "{{ doc.categories[0] | xml_escape }}",
-      {% if site.simple_jekyll_search.fulltext %}"content": {{ doc.content | markdownify | strip_html | replace:'"','' | jsonify | replace:'\n',' ' | replace:'   ',' ' | replace:'  ',' ' | replace:'\',' ' }},{% endif %}
-      "url"      : "{{ site.url }}{{ doc.url }}",
-      "keywords" : "{{ doc.keywords | escape }}"
-    } {% unless forloop.last %},{% endunless %}
-  {% endfor %}
-]
-{% endcapture %}
+      "title"    : "关于 Algviz",
+      "url"      : "https://algviz.com/cn/about.html",
+      "keywords" : ""
+    } ,
+  
+  
+  
+    {
+      "title"    : "About Algviz",
+      "url"      : "https://algviz.com/en/about.html",
+      "keywords" : ""
+    } ,
+  
+  
+  
+  
+  
+  
+  
+    {
+      "title"    : "Algviz",
+      "url"      : "https://algviz.com/en/index.html",
+      "keywords" : ""
+    } ,
+  
+  
+  
+    {
+      "title"    : "Algviz",
+      "url"      : "https://algviz.com/index.html",
+      "keywords" : ""
+    } ,
+  
+  
+  
+  
 
-{{ json | lstrip }}
+  
+    {
+      "title"    : "test2",
+      "category" : "test",
+      
+      "url"      : "https://algviz.com/en/test2/",
+      "keywords" : ""
+    } ,
+  
+    {
+      "title"    : "测试1",
+      "category" : "测试",
+      
+      "url"      : "https://algviz.com/cn/test1/",
+      "keywords" : ""
+    } 
+  
+]
