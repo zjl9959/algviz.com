@@ -83,6 +83,12 @@
     display: block;
     text-align: right;
   }
+
+  .site-header-nav-flag {
+    width: 24px;
+    height: 18px;
+}
+
   .collapsed {
     float: right;
     display: block;
