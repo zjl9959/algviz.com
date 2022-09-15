@@ -94,12 +94,20 @@
             {% for nav in site.navs.cn %}
             <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
             {% endfor %}
-            <a href="{{ site.url }}/en/index.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
+            {% if page.class == "home" %}
+              <a href="{{ site.url }}/en/index.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
+            {% else %}
+              <a href="{{ site.url }}/en/{{ page.url | remove_first: "/cn/" }}" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
+            {% endif %}
           {% elsif page.lang == "en" %}
             {% for nav in site.navs.en %}
-            <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
+              <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
             {% endfor %}
-            <a href="{{ site.url }}/index.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
+            {% if page.class == "home" %}
+              <a href="{{ site.url }}/index.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
+            {% else %}
+              <a href="{{ site.url }}/cn/{{ page.url | remove_first: "/en/" }}" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
+            {% endif %}
           {% endif %}
       </nav>
     </div>

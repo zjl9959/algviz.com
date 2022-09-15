@@ -5,7 +5,7 @@
 # Website info
 title: Algviz
 description: >- # this means to ignore newlines until "baseurl:"
-  Bring alive animations into your code.
+  Bring alive animations into your Python code.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://algviz.com"
 lang: zh    # options: [zh, en]
