@@ -77,7 +77,7 @@
     margin-bottom: 0;
   }
   .site-header .site-header-nav .site-header-nav-item {
-    padding: 0 .5rem;
+    padding: 0 1.0rem 0 0;
     margin-left: 0;
     font-size: 1rem;
     display: block;

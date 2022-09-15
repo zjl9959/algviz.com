@@ -141,7 +141,7 @@
 }
 
 .site-header-nav-flag {
-    margin-bottom: -6px;
+    vertical-align: middle;
     width: 32px;
     height: 24px;
 }

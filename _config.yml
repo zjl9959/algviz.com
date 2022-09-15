@@ -99,4 +99,6 @@ components:
 #    Google       #
 ###################
 google:
-    analytics_id: G-4Z0KQSTDLS
+  analytics:
+    enabled: false
+    id: G-4Z0KQSTDLS
