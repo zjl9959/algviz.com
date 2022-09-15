@@ -2,7 +2,21 @@
 layout: default
 ---
 
+<!-- Latex math formula support -->
+{% if page.latex %}
 <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/globals/base16.monokai.css">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script> 
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$']],
+      processEscapes: true
+    }
+  };
+</script>
+{% endif %}
+<!-- Article meta info -->
 <section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15, ''}}">
 <div class="container">
   <div class="columns">
@@ -37,6 +51,7 @@ layout: default
   </div>
 </div>
 </section>
+<br>
 <!-- / .banner -->
 <section class="container content">
 <div class="columns">
