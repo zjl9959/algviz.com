@@ -57,7 +57,13 @@ layout: default
 <div class="columns">
   <div class="column three-fourths" >
     <article class="article-content markdown-body">
-    {{ content }}
+    {% if site.debug %}
+      {{ content | replace: "https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@master/svgs/", "/assets/svgs/" }}
+    {% elsif site.cdn.jsdeliver.enabled == false %}
+      {{ content | replace: "https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@master/svgs/", "https://github.com/zjl9959/algviz-launch/svgs" }}
+    {% else %}
+      {{ content }}
+    {% endif %}
     </article>
   </div>
   <div class="column one-fourth">

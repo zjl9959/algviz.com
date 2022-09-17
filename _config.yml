@@ -2,6 +2,8 @@
 # Basic configurations   #
 ##########################
 
+debug: true
+
 # Website info
 title: Algviz
 description: >- # this means to ignore newlines until "baseurl:"
@@ -46,8 +48,8 @@ pagination:
   permalink: '/cn/:title/'
 
 cdn:
-    jsdelivr:
-        enabled: false
+    jsdeliver:
+        enabled: true
     svg_repo: zjl9959/algviz-launch
 
 #############################
@@ -100,5 +102,5 @@ components:
 ###################
 google:
   analytics:
-    enabled: false
+    enabled: true
     id: G-4Z0KQSTDLS
