@@ -51,18 +51,10 @@
 
   
     {
-      "title"    : "test2",
-      "category" : "test",
+      "title"    : "插入排序算法",
+      "category" : "算法",
       
-      "url"      : "https://algviz.com/en/test2/",
-      "keywords" : ""
-    } ,
-  
-    {
-      "title"    : "测试1",
-      "category" : "测试",
-      
-      "url"      : "https://algviz.com/cn/test1/",
+      "url"      : "https://algviz.com/cn/InsertionSort/",
       "keywords" : ""
     } 
   
