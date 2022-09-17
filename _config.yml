@@ -2,7 +2,7 @@
 # Basic configurations   #
 ##########################
 
-debug: true
+debug: false
 
 # Website info
 title: Algviz
