@@ -36,9 +36,6 @@
       {% if page.excerpt %}
     <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines}}">
     <meta name="og:description" content="{{ page.excerpt | strip_html | strip_newlines}}">
-      {% else if page.description %}
-    <meta name="description" content="{{ page.description | strip_html | strip_newlines}}">
-    <meta name="og:description" content="{{ page.description | strip_html | strip_newlines}}">
       {% endif %}
     {% else %}
     <meta name="keywords" content="{{ site.keywords }}">
