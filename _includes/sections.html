@@ -24,7 +24,7 @@
                 {% endif %}
             {% endif %}
             <div class="repo-list-content">
-                <li class="repo-list-item">
+                <li class="repo-list-item" style="display:flex;flex-direction:row;">
                     <h3 class="repo-list-name">
                         <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[{{ loc_topmost }}]</span>{{ post.title }}</a>
                     </h3>
@@ -54,7 +54,7 @@
     {% endfor %}
     {% for post in paginator.posts %}
         {% if post.topmost != true %}
-            <li class="repo-list-item">
+            <li class="repo-list-item" style="display:flex;flex-direction:row;">
                 {% if post.sec_svg %}
                     {% if page.lang == "zh" %}
                         <img src="{{ assets_svg_url }}{{ post.url | remove_first: "/cn/" | remove: "/" }}_sec.svg" class="repo-list-svg">

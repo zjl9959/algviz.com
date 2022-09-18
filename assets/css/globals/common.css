@@ -9,6 +9,11 @@
     font-style: italic;
 }
 
+.repo-list-svg{
+    width: 160px;
+    padding-right: 5px;
+}
+
 .site-header,.site-header-actions .select-menu {
     position: relative
 }
