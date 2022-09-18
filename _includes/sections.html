@@ -16,19 +16,27 @@
 <ol class="repo-list">
     {% for post in paginator.posts %}
         {% if post.topmost == true %}
-            {% if page.lang == "zh" %}
-                <img src="{{ svg_base_url }}{{ page.url | remove_first: "/cn/" }}_sec.svg" class="repo-list-svg">
-            {% elsif page.lang == "en" %}
-                <img src="{{ svg_base_url }}{{ page.url | remove_first: "/en/" }}_sec.svg" class="repo-list-svg">
+            {% if post.sec_svg %}
+                {% if page.lang == "zh" %}
+                    <img src="{{ svg_base_url }}{{ page.url | remove_first: "/cn/" }}_sec.svg" class="repo-list-svg">
+                {% elsif page.lang == "en" %}
+                    <img src="{{ svg_base_url }}{{ page.url | remove_first: "/en/" }}_sec.svg" class="repo-list-svg">
+                {% endif %}
             {% endif %}
             <div class="repo-list-content">
                 <li class="repo-list-item">
                     <h3 class="repo-list-name">
                         <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[{{ loc_topmost }}]</span>{{ post.title }}</a>
                     </h3>
-                    <p class="repo-list-description mobile-hidden">
-                        {{ post.excerpt | strip_html | strip }}
-                    </p>
+                    {% if post.sec_svg %}
+                        <p class="repo-list-description mobile-hidden">
+                            {{ post.excerpt | strip_html | strip }}
+                        </p>
+                    {% else %}
+                        <p class="repo-list-description">
+                            {{ post.excerpt | strip_html | strip }}
+                        </p>
+                    {% endif %}
                     <p class="repo-list-meta">
                         <span class="meta-info">
                             <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
@@ -47,18 +55,26 @@
     {% for post in paginator.posts %}
         {% if post.topmost != true %}
             <li class="repo-list-item">
-                {% if page.lang == "zh" %}
-                    <img src="{{ assets_svg_url }}{{ post.url | remove_first: "/cn/" | remove: "/" }}_sec.svg" class="repo-list-svg">
-                {% elsif page.lang == "en" %}
-                    <img src="{{ assets_svg_url }}{{ post.url | remove_first: "/en/" | remove: "/" }}_sec.svg" class="repo-list-svg">
+                {% if post.sec_svg %}
+                    {% if page.lang == "zh" %}
+                        <img src="{{ assets_svg_url }}{{ post.url | remove_first: "/cn/" | remove: "/" }}_sec.svg" class="repo-list-svg">
+                    {% elsif page.lang == "en" %}
+                        <img src="{{ assets_svg_url }}{{ post.url | remove_first: "/en/" | remove: "/" }}_sec.svg" class="repo-list-svg">
+                    {% endif %}
                 {% endif %}
                 <div class="repo-list-content">
                     <h3 class="repo-list-name">
                         <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
                     </h3>
-                    <p class="repo-list-description mobile-hidden">
-                        {{ post.excerpt | strip_html | strip }}
-                    </p>
+                    {% if post.sec_svg %}
+                        <p class="repo-list-description mobile-hidden">
+                            {{ post.excerpt | strip_html | strip }}
+                        </p>
+                    {% else %}
+                        <p class="repo-list-description">
+                            {{ post.excerpt | strip_html | strip }}
+                        </p>
+                    {% endif %}
                     <p class="repo-list-meta">
                         <span class="meta-info">
                             <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
