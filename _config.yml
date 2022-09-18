@@ -6,8 +6,15 @@ debug: false
 
 # Website info
 title: Algviz
-description: >- # this means to ignore newlines until "baseurl:"
-  Bring alive animations into your Python code.
+
+description:
+  cn: 让你的 Python 代码能够输出可视化的算法运行过程的动画演示！
+  en: Bring alive animations into your Python code.
+
+keywords:
+  cn: 算法可视化 Python 数据结构 动画演示
+  en: Algorithm visualization Python animation data structure
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://algviz.com"
 lang: zh    # options: [zh, en]
