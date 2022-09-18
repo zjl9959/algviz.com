@@ -5,10 +5,7 @@
     {% assign loc_topmost = "top" %}
 {% endif %}
 <!-- CND configuration for svg animations -->
-{% assign assets_svg_url = "https://github.com/" | append: site.cdn.svg_repo | append: "/svgs/" %}
-{% if site.cdn.jsdeliver.enabled %}
 {% assign assets_svg_url = "https://cdn.jsdelivr.net/gh/" | append: site.cdn.svg_repo | append: '@master' | append: "/svgs/" %}
-{% endif %}
 {% if site.debug %}
 {% assign assets_svg_url = "/assets/svgs/" %}
 {% endif %}

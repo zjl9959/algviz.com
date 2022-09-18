@@ -63,8 +63,6 @@ layout: default
     <article class="article-content markdown-body">
       {% if site.debug %}
         {{ content | replace: "https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@master/svgs/", "/assets/svgs/" }}
-      {% elsif site.cdn.jsdeliver.enabled == false %}
-        {{ content | replace: "https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@master/svgs/", "https://github.com/zjl9959/algviz-launch/svgs" }}
       {% else %}
         {{ content }}
       {% endif %}
