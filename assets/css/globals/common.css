@@ -4,6 +4,11 @@
     margin-bottom: 5px;
 }
 
+.article-license {
+    font-size: 10pt;
+    font-style: italic;
+}
+
 .site-header,.site-header-actions .select-menu {
     position: relative
 }

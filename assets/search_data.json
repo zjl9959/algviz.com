@@ -4,7 +4,7 @@
   
   
     {
-      "title"    : "page not found",
+      "title"    : "404",
       "url"      : "https://algviz.com/404.html",
       "keywords" : "404"
     } ,
@@ -32,7 +32,7 @@
   
   
     {
-      "title"    : "Algviz",
+      "title"    : "Home",
       "url"      : "https://algviz.com/en/index.html",
       "keywords" : ""
     } ,
@@ -40,7 +40,7 @@
   
   
     {
-      "title"    : "Algviz",
+      "title"    : "主页",
       "url"      : "https://algviz.com/index.html",
       "keywords" : ""
     } ,
