@@ -2,7 +2,7 @@
 layout: post
 title:  "插入排序算法"
 date:   2022-09-17 22:07:00 +0800
-categories: 算法 排序
+categories: 排序算法
 topmost: false
 latex: true
 lang: zh
