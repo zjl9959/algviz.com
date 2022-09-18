@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-
+<!-- CND configuration for assets -->
+{% assign assets_base_url = site.url %}
+{% if site.debug == false and site.cdn.jsdeliver.enabled %}
+{% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
+{% endif %}
 <!-- Latex math formula support -->
 {% if page.latex %}
 <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/globals/base16.monokai.css">
@@ -57,13 +61,27 @@ layout: default
 <div class="columns">
   <div class="column three-fourths" >
     <article class="article-content markdown-body">
-    {% if site.debug %}
-      {{ content | replace: "https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@master/svgs/", "/assets/svgs/" }}
-    {% elsif site.cdn.jsdeliver.enabled == false %}
-      {{ content | replace: "https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@master/svgs/", "https://github.com/zjl9959/algviz-launch/svgs" }}
-    {% else %}
-      {{ content }}
-    {% endif %}
+      {% if site.debug %}
+        {{ content | replace: "https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@master/svgs/", "/assets/svgs/" }}
+      {% elsif site.cdn.jsdeliver.enabled == false %}
+        {{ content | replace: "https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@master/svgs/", "https://github.com/zjl9959/algviz-launch/svgs" }}
+      {% else %}
+        {{ content }}
+      {% endif %}
+      <br>
+      <div class="article-license">
+        {% if page.lang == "zh" %}
+          <p>本文遵守<a href="https://creativecommons.org/licenses/by-nd/2.0/">
+            Attribution-NoDerivs 2.0 Generic</a>许可协议。
+            <img src="{{ asset_base_url }}/assets/img/license.png" alt="Attribution-NoDerivs 2.0 Generic">
+          </p>
+        {% elsif page.lang == "en" %}
+          <p>This article follows the<a href="https://creativecommons.org/licenses/by-nd/2.0/">
+            Attribution-NoDerivs 2.0 Generic</a> license.
+            <img src="{{ asset_base_url }}/assets/img/license.png" alt="Attribution-NoDerivs 2.0 Generic">
+          </p>
+        {% endif %}
+      </div>
     </article>
   </div>
   <div class="column one-fourth">

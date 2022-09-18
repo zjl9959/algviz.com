@@ -1,3 +1,9 @@
+<!-- CND configuration for assets -->
+{% assign assets_base_url = site.url %}
+{% if site.debug == false and site.cdn.jsdeliver.enabled %}
+{% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
 <head>

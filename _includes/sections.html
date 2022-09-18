@@ -18,9 +18,9 @@
         {% if post.topmost == true %}
             {% if post.sec_svg %}
                 {% if page.lang == "zh" %}
-                    <img src="{{ svg_base_url }}{{ page.url | remove_first: "/cn/" }}_sec.svg" class="repo-list-svg">
+                    <img src="{{ assets_svg_url }}{{ page.url | remove_first: "/cn/" }}_sec.svg" class="repo-list-svg">
                 {% elsif page.lang == "en" %}
-                    <img src="{{ svg_base_url }}{{ page.url | remove_first: "/en/" }}_sec.svg" class="repo-list-svg">
+                    <img src="{{ assets_svg_url }}{{ page.url | remove_first: "/en/" }}_sec.svg" class="repo-list-svg">
                 {% endif %}
             {% endif %}
             <div class="repo-list-content">

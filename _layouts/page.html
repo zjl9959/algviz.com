@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-
+<!-- CND configuration for assets -->
+{% assign assets_base_url = site.url %}
+{% if site.debug == false and site.cdn.jsdeliver.enabled %}
+{% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
+{% endif %}
 <!-- Page meta info -->
 <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/globals/base16.monokai.css">
 <section class="collection-head small geopattern" data-pattern-id="{{ page.title | truncate: 15}}">

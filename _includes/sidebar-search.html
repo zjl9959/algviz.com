@@ -4,7 +4,11 @@
 {% elsif page.lang == "en" %}
     {% assign loc_search = "Search:" %}
 {% endif %}
-
+<!-- CND configuration for assets -->
+{% assign assets_base_url = site.url %}
+{% if site.debug == false and site.cdn.jsdeliver.enabled %}
+{% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
+{% endif %}
 <h3>{{ loc_search }}</h3>
 <div id="site_search">
     <input style="width:96%" type="text" id="search_box" placeholder="Search">

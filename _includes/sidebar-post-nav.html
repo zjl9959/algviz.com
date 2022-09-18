@@ -5,7 +5,11 @@
   <dl></dl>
   </section>
 </div>
-
+<!-- CND configuration for assets -->
+{% assign assets_base_url = site.url %}
+{% if site.debug == false and site.cdn.jsdeliver.enabled %}
+{% assign assets_base_url = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: '@master' %}
+{% endif %}
 <!-- Localization -->
 {% if page.lang == "zh" %}
   <script src="{{ assets_base_url }}/assets/js/jquery.toc.js"></script>
