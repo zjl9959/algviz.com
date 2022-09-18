@@ -4,51 +4,73 @@
 {% elsif page.lang == "en" %}
     {% assign loc_topmost = "top" %}
 {% endif %}
+<!-- CND configuration for svg animations -->
+{% assign assets_svg_url = "https://github.com/" | append: site.cdn.svg_repo | append: "/svgs/" %}
+{% if site.cdn.jsdeliver.enabled %}
+{% assign assets_svg_url = "https://cdn.jsdelivr.net/gh/" | append: site.cdn.svg_repo | append: '@master' | append: "/svgs/" %}
+{% endif %}
+{% if site.debug %}
+{% assign assets_svg_url = "/assets/svgs/" %}
+{% endif %}
 <!-- Pages summary list -->
 <ol class="repo-list">
     {% for post in paginator.posts %}
         {% if post.topmost == true %}
-            <li class="repo-list-item">
-                <h3 class="repo-list-name">
-                    <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[{{ loc_topmost }}]</span>{{ post.title }}</a>
-                </h3>
-                <p class="repo-list-description">
-                    {{ post.excerpt | strip_html | strip }}
-                </p>
-                <p class="repo-list-meta">
-                    <span class="meta-info">
-                        <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
-                    </span>
-                    {% for cat in post.categories %}
+            {% if page.lang == "zh" %}
+                <img src="{{ svg_base_url }}{{ page.url | remove_first: "/cn/" }}_sec.svg" class="repo-list-svg">
+            {% elsif page.lang == "en" %}
+                <img src="{{ svg_base_url }}{{ page.url | remove_first: "/en/" }}_sec.svg" class="repo-list-svg">
+            {% endif %}
+            <div class="repo-list-content">
+                <li class="repo-list-item">
+                    <h3 class="repo-list-name">
+                        <a href="{{ site.url }}{{ post.url }}"><span class="top-most-flag">[{{ loc_topmost }}]</span>{{ post.title }}</a>
+                    </h3>
+                    <p class="repo-list-description mobile-hidden">
+                        {{ post.excerpt | strip_html | strip }}
+                    </p>
+                    <p class="repo-list-meta">
                         <span class="meta-info">
-                            <span class="octicon octicon-file-directory"></span>
-                            <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                            <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
                         </span>
-                    {% endfor %}
-                </p>
-            </li>
+                        {% for cat in post.categories %}
+                            <span class="meta-info">
+                                <span class="octicon octicon-file-directory"></span>
+                                <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                            </span>
+                        {% endfor %}
+                    </p>
+                </li>
+            </div>
         {% endif %}
     {% endfor %}
     {% for post in paginator.posts %}
         {% if post.topmost != true %}
             <li class="repo-list-item">
-                <h3 class="repo-list-name">
-                    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                </h3>
-                <p class="repo-list-description">
-                    {{ post.excerpt | strip_html | strip }}
-                </p>
-                <p class="repo-list-meta">
-                    <span class="meta-info">
-                        <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
-                    </span>
-                    {% for cat in post.categories %}
+                {% if page.lang == "zh" %}
+                    <img src="{{ assets_svg_url }}{{ post.url | remove_first: "/cn/" | remove: "/" }}_sec.svg" class="repo-list-svg">
+                {% elsif page.lang == "en" %}
+                    <img src="{{ assets_svg_url }}{{ post.url | remove_first: "/en/" | remove: "/" }}_sec.svg" class="repo-list-svg">
+                {% endif %}
+                <div class="repo-list-content">
+                    <h3 class="repo-list-name">
+                        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                    </h3>
+                    <p class="repo-list-description mobile-hidden">
+                        {{ post.excerpt | strip_html | strip }}
+                    </p>
+                    <p class="repo-list-meta">
                         <span class="meta-info">
-                            <span class="octicon octicon-file-directory"></span>
-                            <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                            <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
                         </span>
-                    {% endfor %}
-                </p>
+                        {% for cat in post.categories %}
+                            <span class="meta-info">
+                                <span class="octicon octicon-file-directory"></span>
+                                <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                            </span>
+                        {% endfor %}
+                    </p>
+                </div>
             </li>
         {% endif %}
     {% endfor %}
