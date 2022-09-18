@@ -27,6 +27,22 @@
   
   
   
+    {
+      "title"    : "分类",
+      "url"      : "https://algviz.com/cn/categories.html",
+      "keywords" : "分类"
+    } ,
+  
+  
+  
+    {
+      "title"    : "Categories",
+      "url"      : "https://algviz.com/en/categories.html",
+      "keywords" : "分类"
+    } ,
+  
+  
+  
   
   
   
@@ -51,8 +67,16 @@
 
   
     {
+      "title"    : "Insertion sort algorithm",
+      "category" : "SortingAlgorithm",
+      
+      "url"      : "https://algviz.com/en/InsertionSort/",
+      "keywords" : ""
+    } ,
+  
+    {
       "title"    : "插入排序算法",
-      "category" : "算法",
+      "category" : "排序算法",
       
       "url"      : "https://algviz.com/cn/InsertionSort/",
       "keywords" : ""
