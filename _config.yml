@@ -56,7 +56,7 @@ pagination:
 
 cdn:
     jsdeliver:
-        enabled: false
+        enabled: true
     svg_repo: zjl9959/algviz-launch
 
 #############################
