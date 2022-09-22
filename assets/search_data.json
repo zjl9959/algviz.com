@@ -80,6 +80,14 @@
       
       "url"      : "https://algviz.com/cn/InsertionSort/",
       "keywords" : ""
+    } ,
+  
+    {
+      "title"    : "冒泡排序算法",
+      "category" : "排序算法",
+      
+      "url"      : "https://algviz.com/cn/BubbleSort/",
+      "keywords" : ""
     } 
   
 ]
