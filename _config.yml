@@ -53,6 +53,8 @@ pagination:
   per_page: 5
   collection: cn
   permalink: '/cn/:title/'
+  sort_field: 'date'
+  sort_reverse: true
 
 cdn:
     jsdeliver:
