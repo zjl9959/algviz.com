@@ -75,6 +75,14 @@
     } ,
   
     {
+      "title"    : "Bubble sort algorithm",
+      "category" : "SortingAlgorithm",
+      
+      "url"      : "https://algviz.com/en/BubbleSort/",
+      "keywords" : ""
+    } ,
+  
+    {
       "title"    : "插入排序算法",
       "category" : "排序算法",
       
