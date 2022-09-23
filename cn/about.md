@@ -90,10 +90,9 @@ Algviz 使用 GNU GPLv3 [许可证](https://github.com/zjl9959/algviz/blob/main/
 
 ## 相关链接
 
-+ [algviz.com](https://algviz.com/)
-+ [GitHub 项目地址](https://github.com/zjl9959/algviz)
-+ [PyPi 主页](https://pypi.org/project/algviz/)
-+ [API 接口介绍](https://algviz.readthedocs.io/en/latest/index.html)
++ [GitHub@zjl9959/algviz](https://github.com/zjl9959/algviz)
++ [PyPi 主页@algviz](https://pypi.org/project/algviz/)
++ [algviz 接口介绍](https://algviz.readthedocs.io/en/latest/index.html)
 
 
 [Vector]: https://algviz.readthedocs.io/en/latest/api.html#algviz.vector.Vector

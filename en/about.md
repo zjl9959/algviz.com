@@ -109,9 +109,9 @@ Algviz uses GNU general public [LICENSE](https://github.com/zjl9959/algviz/blob/
 
 ## Links
 
-+ [GitHub](https://github.com/zjl9959/algviz)
-+ [PyPi](https://pypi.org/project/algviz/)
-+ [ReadtheDocs](https://algviz.readthedocs.io/en/latest/index.html)
++ [GitHub@zjl9959/algviz](https://github.com/zjl9959/algviz)
++ [PyPi@algviz](https://pypi.org/project/algviz/)
++ [ReadtheDocs@algviz](https://algviz.readthedocs.io/en/latest/index.html)
 
 
 [Vector]: https://algviz.readthedocs.io/en/latest/api.html#algviz.vector.Vector
