@@ -96,6 +96,22 @@
       
       "url"      : "https://algviz.com/cn/BubbleSort/",
       "keywords" : ""
+    } ,
+  
+    {
+      "title"    : "归并排序算法",
+      "category" : "排序算法",
+      
+      "url"      : "https://algviz.com/cn/MergeSort/",
+      "keywords" : ""
+    } ,
+  
+    {
+      "title"    : "递归算法分析工具 RecursiveTree 使用介绍",
+      "category" : "工具",
+      
+      "url"      : "https://algviz.com/cn/RecursiveTree/",
+      "keywords" : ""
     } 
   
 ]
