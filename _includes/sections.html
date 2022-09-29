@@ -41,7 +41,7 @@
                         {% for cat in post.categories %}
                             <span class="meta-info">
                                 <span class="octicon octicon-file-directory"></span>
-                                <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                                <a href="{{ site.url }}/categories.html#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
                             </span>
                         {% endfor %}
                     </p>
@@ -80,9 +80,9 @@
                             <span class="meta-info">
                                 <span class="octicon octicon-file-directory"></span>
                                 {% if page.lang == "zh" %}
-                                    <a href="{{ site.url }}/cn/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                                    <a href="{{ site.url }}/cn/categories.html#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
                                 {% elsif page.lang == "en" %}
-                                    <a href="{{ site.url }}/en/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
+                                    <a href="{{ site.url }}/en/categories.html#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
                                 {% endif %}
                             </span>
                         {% endfor %}
