@@ -38,7 +38,7 @@
     {
       "title"    : "Categories",
       "url"      : "https://algviz.com/en/categories.html",
-      "keywords" : "分类"
+      "keywords" : "categories"
     } ,
   
   
@@ -79,6 +79,14 @@
       "category" : "SortingAlgorithm",
       
       "url"      : "https://algviz.com/en/BubbleSort/",
+      "keywords" : ""
+    } ,
+  
+    {
+      "title"    : "Introduction to the RecursiveTree tool",
+      "category" : "Tool",
+      
+      "url"      : "https://algviz.com/en/RecursiveTree/",
       "keywords" : ""
     } ,
   
