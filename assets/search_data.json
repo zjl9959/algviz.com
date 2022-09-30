@@ -83,6 +83,14 @@
     } ,
   
     {
+      "title"    : "Merge sort algorithm",
+      "category" : "SortingAlgorithm",
+      
+      "url"      : "https://algviz.com/en/MergeSort/",
+      "keywords" : ""
+    } ,
+  
+    {
       "title"    : "Introduction to the RecursiveTree tool",
       "category" : "Tool",
       
