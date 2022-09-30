@@ -100,9 +100,17 @@
 <body class="{{ page.class }}" data-mz="{{ page.class }}">
   <header class="site-header">
     <div class="container">
-      <span><a href="{{ site.url }}/" title="{{ site.title }}">
-          <img class="header-logo" src="{{ assets_base_url }}/assets/img/logo.svg" alt="algviz.com">
-      </a></span>
+      <span>
+        {% if page.lang == "en" %}
+          <a href="{{ site.url }}/en/index.html" title="{{ site.title }}">
+            <img class="header-logo" src="{{ assets_base_url }}/assets/img/logo.svg" alt="algviz.com">
+          </a>
+        {% else %}
+          <a href="{{ site.url }}/" title="{{ site.title }}">
+            <img class="header-logo" src="{{ assets_base_url }}/assets/img/logo.svg" alt="algviz.com">
+          </a>
+        {% endif %}
+      </span>
       <button class="collapsed mobile-visible" type="button" onclick="toggleMenu();">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>

@@ -50,7 +50,7 @@ def insertSort(nums_):
 insertSort([5, 3, -2, 3, -1, 1, 4])
 ```
 
-*You can run this snippet directly after installing algviz locally! For environment configuration, please refer to: [Installation](http://localhost:4000/en/about.html#installation)*
+*You can run this code snippet directly after installing algviz locally! For environment configuration, please refer to the [Installation](http://localhost:4000/en/about.html#installation) page.*
 
 ### Animation Demo
 
