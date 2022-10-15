@@ -133,7 +133,7 @@
             {% if page.class == "home" %}
               <a href="{{ site.url }}/index.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
             {% else %}
-              <a href="{{ site.url }}/cn/{{ page.url | remove_first: "/en/" }}" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
+              <a href="{{ site.url }}/cn/{{ page.url | remove_first: "/en/" }}" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
             {% endif %}
           {% endif %}
       </nav>

@@ -19,7 +19,7 @@ Just like the animation below: as the algorithm runs, the bigger elements in the
 
 ## Fundamental
 
-The bubble sort algorithm is similar to the [insertion sort algorithm](https://algviz.com/en/InsertionSort/). The algorithm compares the size of two adjacent elements in turn during each round of scanning and if the two elements are in reverse order, the algorithm swaps the positions of the two elements. Suppose the algorithm scans from left to right, and each time it puts the larger of the two adjacent elements in the right. Then after this round of scanning, the maximum value in the scanned sequence will run to the far right of the scanned sequence. The bubble sort algorithm repeats the scanning process until all the elements are sorted.
+The bubble sort algorithm is similar to the [insertion sort algorithm]({{ site.url }}/en/InsertionSort/). The algorithm compares the size of two adjacent elements in turn during each round of scanning and if the two elements are in reverse order, the algorithm swaps the positions of the two elements. Suppose the algorithm scans from left to right, and each time it puts the larger of the two adjacent elements in the right. Then after this round of scanning, the maximum value in the scanned sequence will run to the far right of the scanned sequence. The bubble sort algorithm repeats the scanning process until all the elements are sorted.
 
 The bubble sort algorithm is also a **comparison-based** sorting algorithm and the sorting results are stable. The bubble sort algorithm needs *O(n^2)* comparison operations regardless of the sequence of the input data. Therefore, in some cases, the algorithm is not as efficient as the insertion sort algorithm. And for large-scale cases, the bubble sort algorithm also dones't have any advantage except for its simplicity.
 
@@ -51,7 +51,7 @@ def bubble_sort(data):
 bubble_sort([5, 3, -2, 3, -1, 1, 4])
 ```
 
-*You can run this code snippet directly after installing algviz locally! For environment configuration, please refer to the [Installation](http://localhost:4000/en/about.html#installation) page.*
+*You can run this code snippet directly after installing algviz locally! For environment configuration, please refer to the [Installation]({{ site.url }}/en/about.html#installation) page.*
 
 ## Reference
 

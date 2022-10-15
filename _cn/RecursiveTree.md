@@ -72,5 +72,5 @@ print("fib(4)={}".format(fib(4)))
 
 ## 补充说明
 
-+ 使用递归树（RecursiveTree），需要安装 [algviz 0.1.6](https://pypi.org/project/algviz/0.1.6/) 及以上的版本，环境配置请参考：[安装步骤](https://algviz.com/cn/about.html#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4)
++ 使用递归树（RecursiveTree），需要安装 [algviz 0.1.6](https://pypi.org/project/algviz/0.1.6/) 及以上的版本，环境配置请参考：[安装步骤]({{ site.url }}/cn/about.html#%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4)
 + *Algviz 是一个开源项目，感兴趣的朋友也可以去我的 [Github](https://github.com/zjl9959/algviz) 点一个 Star！*
