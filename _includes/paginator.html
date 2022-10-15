@@ -2,9 +2,17 @@
 {% if paginator.total_pages > 0 %}
     {% if paginator.previous_page %}
         {% if paginator.previous_page == 1 %}
-            <a href="{{ site.url }}/" class="btn btn-outline">&laquo;</a>
+            {% if page.lang == "zh" %}
+                <a href="{{ site.url }}/" class="btn btn-outline">&laquo;</a>
+            {% else %}
+                <a href="{{ site.url }}/en/" class="btn btn-outline">&laquo;</a>
+            {% endif %}
         {% else %}
-            <a href="{{ site.url }}/page{{paginator.previous_page}}"  class="btn btn-outline">&laquo;</a>
+            {% if page.lang == "zh" %}
+                <a href="{{ site.url }}/page{{paginator.previous_page}}"  class="btn btn-outline">&laquo;</a>
+            {% else %}
+                <a href="{{ site.url }}/en/page{{paginator.previous_page}}"  class="btn btn-outline">&laquo;</a>
+            {% endif %}
         {% endif %}
     {% else %}
         <button disabled="disabled" href="javascript:;" class="btn btn-outline">&laquo;</button>
@@ -13,7 +21,11 @@
     {% if paginator.page == 1 %}
         <a href="javascript:;" class="active btn btn-outline">1</a>
     {% else %}
-        <a href="{{ site.url }}/"  class="btn btn-outline">1</a>
+        {% if page.lang == "zh" %}
+            <a href="{{ site.url }}/"  class="btn btn-outline">1</a>
+        {% else %}
+            <a href="{{ site.url }}/en/"  class="btn btn-outline">1</a>
+        {% endif %}
     {% endif %}
     {% assign aroundSize = 2 %}
     {% assign midStartPage = paginator.page | minus: aroundSize %}
@@ -33,7 +45,11 @@
         {% if count == paginator.page %}
         <a href="jaavascript:;" class="active btn btn-outline">{{count}}</a>
         {% else %}
-        <a href="{{ site.url }}/page{{count}}"  class="btn btn-outline">{{count}}</a>
+            {% if page.lang == "zh" %}
+                <a href="{{ site.url }}/page{{count}}"  class="btn btn-outline">{{count}}</a>
+            {% else %}
+                <a href="{{ site.url }}/en/page{{count}}"  class="btn btn-outline">{{count}}</a>
+            {% endif %}
         {% endif %}
     {% endfor %}
     {% assign tmpPage = paginator.page | plus: aroundSize | plus: 1 %}
@@ -45,11 +61,19 @@
         {% if paginator.page == paginator.total_pages %}
             <a href="jaavascript:;" class="active btn btn-outline">{{paginator.total_pages}}</a>
         {% else %}
-            <a href="{{ site.url }}/page{{paginator.total_pages}}"  class="btn btn-outline">{{paginator.total_pages}}</a>
+            {% if page.lang == "zh" %}
+                <a href="{{ site.url }}/page{{paginator.total_pages}}"  class="btn btn-outline">{{paginator.total_pages}}</a>
+            {% else %}
+                <a href="{{ site.url }}/en/page{{paginator.total_pages}}"  class="btn btn-outline">{{paginator.total_pages}}</a>
+            {% endif %}
         {% endif %}
     {% endif %}
     {% if paginator.next_page %}
-        <a href="{{ site.url }}/page{{paginator.next_page}}"  class="btn btn-outline">&raquo;</a>
+        {% if page.lang == "zh" %}
+            <a href="{{ site.url }}/page{{paginator.next_page}}"  class="btn btn-outline">&raquo;</a>
+        {% else %}
+            <a href="{{ site.url }}/en/page{{paginator.next_page}}"  class="btn btn-outline">&raquo;</a>
+        {% endif %}
     {% else %}
         <button disabled="disabled" href="javascript:;" class="btn btn-outline">&raquo;</button>
     {% endif %}

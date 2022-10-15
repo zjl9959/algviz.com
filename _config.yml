@@ -51,8 +51,7 @@ collections:
 pagination:
   enabled: true
   per_page: 5
-  collection: cn
-  permalink: '/cn/:title/'
+  collection: cn, en
   sort_field: 'date'
   sort_reverse: true
 
