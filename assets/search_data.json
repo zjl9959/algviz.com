@@ -99,6 +99,14 @@
     } ,
   
     {
+      "title"    : "Quick Sort Algorithm",
+      "category" : "SortingAlgorithm",
+      
+      "url"      : "https://algviz.com/en/QuickSort/",
+      "keywords" : ""
+    } ,
+  
+    {
       "title"    : "插入排序算法",
       "category" : "排序算法",
       
