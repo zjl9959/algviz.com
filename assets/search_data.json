@@ -43,21 +43,37 @@
   
   
   
-  
-  
-  
-  
     {
-      "title"    : "Home",
-      "url"      : "https://algviz.com/en/index.html",
+      "title"    : "主页",
+      "url"      : "https://algviz.com/",
       "keywords" : ""
     } ,
   
   
   
     {
-      "title"    : "主页",
-      "url"      : "https://algviz.com/index.html",
+      "title"    : "HomePage",
+      "url"      : "https://algviz.com/index_en.html",
+      "keywords" : ""
+    } ,
+  
+  
+  
+  
+  
+  
+  
+    {
+      "title"    : "博客",
+      "url"      : "https://algviz.com/cn/index.html",
+      "keywords" : ""
+    } ,
+  
+  
+  
+    {
+      "title"    : "Blogs",
+      "url"      : "https://algviz.com/en/index.html",
       "keywords" : ""
     } ,
   
