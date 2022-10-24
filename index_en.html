@@ -2,8 +2,8 @@
 layout: default
 class: home
 comments: false
-lang: zh
-title: 主页
+lang: en
+title: HomePage
 ---
 
 <!-- CND configuration for assets -->
@@ -18,11 +18,12 @@ title: 主页
 <section class="container content">
 <br>
 <h1 style="text-align:center;" class="home_title">
-  <span style="color:#4bacc6" >只需简单几步</span>
-  <span style="color:#4bacc6" >让算法动起来</span>
+  <span style="color:#4bacc6" >Just a few steps, </span>
+  <span style="color:#4bacc6" >make your algorithm alive</span>
 </h1>
 <p class="home_desc">
-  Algviz 是一个用于生成算法可视化动画的 Python 库，您只需在代码中引入少量的接口，即可看到算法的运行动画！
+  <span>Algviz is an algorithm visualization tool.</span><br>
+  <span>You can see live algorithm animation by adding a few algviz interfaces to your Python code!</span>
 </p>
 <div class="image_play_wrapper">
     <a class="image_play_prev" style="left:0;">
@@ -35,7 +36,7 @@ title: 主页
               <img class="image_play_right" src="{{ assets_base_url }}/assets/img/right.png"></img>
               <img class="image_play_svg" src="{{ assets_base_url }}/assets/img/code_bubble_sort.svg"></img>
           </div>
-          <p class="home_play_desc">冒泡排序算法可视化</p>
+          <p class="home_play_desc">Bubble sort algorithm</p>
       </li>
       <li>
         <div>
@@ -43,7 +44,7 @@ title: 主页
             <img class="image_play_right" src="{{ assets_base_url }}/assets/img/right.png"></img>
             <img class="image_play_svg" src="{{ assets_base_url }}/assets/img/code_merge_linked_list.svg"></img>
         </div>
-        <p class="home_play_desc">合并链表过程可视化</p>
+        <p class="home_play_desc">Merge two linked lists</p>
       </li>
       <li>
         <div>
@@ -51,7 +52,7 @@ title: 主页
             <img class="image_play_right" src="{{ assets_base_url }}/assets/img/right.png"></img>
             <img class="image_play_svg" src="{{ assets_base_url }}/assets/img/code_trie_tree.svg"></img>
         </div>
-        <p class="home_play_desc">字典树构造过程可视化</p>
+        <p class="home_play_desc">Make a trie tree</p>
       </li>
       <li>
         <div>
@@ -59,7 +60,7 @@ title: 主页
             <img class="image_play_right" src="{{ assets_base_url }}/assets/img/right.png"></img>
             <img class="image_play_svg" src="{{ assets_base_url }}/assets/img/code_topology_sort.svg"></img>
         </div>
-        <p class="home_play_desc">拓扑排序算法可视化</p>
+        <p class="home_play_desc">Topological sort algorithm</p>
       </li>
     </ul>
     <a class="image_play_next" style="right:0;">
@@ -72,9 +73,13 @@ title: 主页
 <HR align=center>
 <br>
 <h1 style="text-align:center;" class="home_title">
-  <span style="color:#ea700d" >支持多种数据结构</span>
+  <span style="color:#ea700d" >Support multiple data structures</span>
 </h1>
-<p class="home_desc">Algviz 中定义了多种数据结构对象，以支持丰富的动画效果，您可以像使用 Python 内置对象一样来使用它们。</p>
+
+<p class="home_desc">
+  <span>There are multiple data structures defined in Algviz to support various animation effects.</span><br>
+  <span>You can use them just like Python's built-in objects.</span>
+</p>
 
 <div class="image_list">
 <img class = "image_play_data" src="{{ assets_base_url }}/assets/img/data_vector.svg"></img>
@@ -83,18 +88,20 @@ title: 主页
 <img class = "image_play_data" src="{{ assets_base_url }}/assets/img/data_graph.svg"></img>
 </div>
 <div class="image_name_list">
-<span class="home_desc">向量</span>
-<span class="home_desc">表格</span>
-<span class="home_desc">树</span>
-<span class="home_desc">拓扑图</span>
+<span class="home_desc">Vector</span>
+<span class="home_desc">Table</span>
+<span class="home_desc">Tree</span>
+<span class="home_desc">Graph</span>
 </div>
 
 <HR align=center>
 <br>
 <h1 style="text-align:center;" class="home_title">
-  <span style="color:#92d050" >将动画嵌入笔记中</span>
+  <span style="color:#92d050" >Embedded animations in Jupyter Notebook</span>
 </h1>
-<p class="home_desc">您可以在 <a href="https://jupyter.org/">Jupyter Notebook</a> 中使用 Algviz 生成动画，并在笔记本中实时预览算法的运行过程。</p>
+<p class="home_desc">
+  <span>You can use Algviz to generate animations in <a href="https://jupyter.org/">Jupyter Notebook.</a>, and preview the algorithm animation in real time.</span>
+</p>
 <div style="position:relative;width:100%;display: flex;justify-content: center;overflow:hidden;align-items:center;">
 <img style="width:80%;border-radius:5px;border:3px solid #A0A0A0;" src="{{ assets_base_url }}/assets/img/using_algviz_notebook.gif"></img>
 </div>

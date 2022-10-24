@@ -102,7 +102,7 @@
     <div class="container">
       <span>
         {% if page.lang == "en" %}
-          <a href="{{ site.url }}/en/index.html" title="{{ site.title }}">
+          <a href="{{ site.url }}/index_en.html" title="{{ site.title }}">
             <img class="header-logo" src="{{ assets_base_url }}/assets/img/logo.svg" alt="algviz.com">
           </a>
         {% else %}
@@ -122,7 +122,11 @@
             <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
             {% endfor %}
             {% if page.class == "home" %}
-              <a href="{{ site.url }}/en/index.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
+              {% if page.subtype == "blog" %}
+                <a href="{{ site.url }}/en/index.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
+              {% else %}
+                <a href="{{ site.url }}/index_en.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
+              {% endif %}
             {% else %}
               <a href="{{ site.url }}/en/{{ page.url | remove_first: "/cn/" }}" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
             {% endif %}
@@ -131,7 +135,11 @@
               <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
             {% endfor %}
             {% if page.class == "home" %}
-              <a href="{{ site.url }}/index.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
+              {% if page.subtype == "blog" %}
+              <a href="{{ site.url }}/cn/{{ page.url | remove_first: "/en/" }}" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
+              {% else %}
+                <a href="{{ site.url }}/index.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
+              {% endif %}
             {% else %}
               <a href="{{ site.url }}/cn/{{ page.url | remove_first: "/en/" }}" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
             {% endif %}
