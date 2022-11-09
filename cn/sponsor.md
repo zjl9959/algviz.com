@@ -15,7 +15,7 @@ lang: zh
 😊感谢您对 Algviz 的支持！
 请使用微信扫描下方二维码进行赞助。
 
-<img alt="sponsor_wx.jpg" width="60%" src="{{ assets_base_url }}/assets/img/sponsor_wx.jpg">
+<img alt="sponsor_wx.jpg" width="60%" src="{{ site.url }}/assets/img/sponsor_wx.jpg">
 
 ### 赞助者列表：
 
