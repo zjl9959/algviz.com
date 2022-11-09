@@ -86,7 +86,7 @@ class MergeSort():
 solver = MergeSort([5, 3, -2, 3, -1, 1, 4])
 ```
 
-*You can run this code snippet directly after installing algviz locally! For environment configuration, please refer to the [Installation]({{ site.url }}/en/about.html#installation) page.*
+*You can run this code snippet directly after installing algviz locally! For environment configuration, please refer to the [Installation]({{ site.url }}/en/installation.html) page.*
 
 ## Animation Demo
 

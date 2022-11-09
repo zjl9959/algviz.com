@@ -73,7 +73,7 @@ class QuickSort():
 solver = QuickSort([3, -4, -1, 4, -6, -3, 2])
 ```
 
-*You can run this code snippet directly after installing algviz locally! For environment configuration, please refer to the [Installation]({{ site.url }}/en/about.html#installation) page.*
+*You can run this code snippet directly after installing algviz locally! For environment configuration, please refer to the [Installation]({{ site.url }}/en/installation.html) page.*
 
 ## Animation Demo
 
