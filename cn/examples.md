@@ -6,8 +6,16 @@ comments: false
 lang: zh
 ---
 
-本教程将教会您如何使用 Algviz 进行算法可视化编程，完整的接口定义请参考 [Algviz API](https://algviz.readthedocs.io/en/latest/api.html) 描述文档，
-或是 [Jupyter Notebooks](https://github.com/zjl9959/algviz/tree/main/examples) 中的使用例程。
+本教程将教会您如何使用 Algviz 进行算法可视化编程，完整的接口定义请参考 [Algviz API](https://algviz.readthedocs.io/en/latest/api.html) 描述文档。下表列出了一些在 JupyterNotebook 中的使用例子作为参考：
+
+| 对象         |  Github 链接            | Google Colab 链接          |   简介                      |
+| :----           | :------                 | :---------                 | :-------                           |
+| **[vector]**      | [vector.ipynb]          | [vector.ipynb colab]       | 向量对象的基础操作。 <br> 例如：`冒泡排序算法`。 |
+| **[table]**       | [table.ipynb]           | [table.ipynb colab]        | 表格对象的基本操作。  |
+| **[linked list]** | [linked_list.ipynb]     | [linked_list.ipynb colab]  | 使用单向链表和双向链表。 |
+| **[tree]**        | [tree.ipynb]            | [tree.ipynb colab]         | 使用二叉树和多叉树。 <br> 例如：`二叉树镜像算法` 和 `构造字典树`。 |
+| **[graph]**       | [graph.ipynb]           | [graph.ipynb colab]        | 使用拓扑图对象。 |
+
 
 ## 可视化对象
 
@@ -39,7 +47,7 @@ viz.display(delay=2.0)      # 显示第二帧动画，帧时长为设定值 2.0 
 ### 创建数据对象
 
 一个数据对象也是 Algviz 中一个基本的数据容器（例如：向量、树、拓扑图），当您修改数据对象中的内容时，
-Algviz 会记录它们的变化，并为不同的操作生成相应的动画。而在使用这些数据对象之前，需要通过 Visualizer 中提供的接口来创建它们，具体的创建方式将会在下面介绍。
+Algviz 会记录它们的变化，并为不同的操作生成相应的动画。而在使用这些数据对象之前，需要通过 Visualizer 中提供的接口来创建它们，下面介绍各个数据对象的创建方式。
 
 
 ## 向量
@@ -334,7 +342,7 @@ for child in root2.children():
     tree.markNode(algviz.color_red, child)
     viz.display(1.0)
 tree_node3 = root2.childAt(2)           # 记录节点 3；
-tree_node3.add(algviz.TreeNode(8))      # 节点 n3 新增一个子节点 7；
+tree_node3.add(algviz.TreeNode(8))      # 节点 n3 新增一个子节点 8；
 viz.display()
 tree_node3.add(algviz.TreeNode(7), 0)   # 节点 n3 插入一个子节点 7；
 viz.display()
@@ -392,11 +400,7 @@ graph_nodes = algviz.parseGraph(
     },
     directed = True         # 拓扑图为有向图；
 )
-graph2 = viz.createGraph(
-    data = graph_nodes,     # 绑定拓扑图节点；
-    name = "Graph_2",       # 拓扑图名称；
-    directed = True         # 拓扑图为有向图。
-)
+graph2 = viz.createGraph(graph_nodes, "Graph_2", True)
 viz.display()
 ```
 
@@ -523,6 +527,24 @@ viz.display(1.0)
 
 ### 颜色对照表
 
-在调用 [Vector.mark](https://algviz.readthedocs.io/en/latest/api.html#algviz.vector.Vector.mark)、 [Table.mark](https://algviz.readthedocs.io/en/latest/api.html#algviz.table.Table.mark) 以及 [SvgGraph.markNode](https://algviz.readthedocs.io/en/latest/api.html#algviz.svg_graph.SvgGraph.markNode) 等接口时，您需要传入一个表示 RGB 颜色值的三元组，为了方便使用，Algviz 中提供了一些预定义的颜色值（如：`algviz.color_red`），下面是颜色对照表：
+在调用 [Vector.mark](https://algviz.readthedocs.io/en/latest/api.html#algviz.vector.Vector.mark)、 [Table.mark](https://algviz.readthedocs.io/en/latest/api.html#algviz.table.Table.mark) 以及 [SvgGraph.markNode](https://algviz.readthedocs.io/en/latest/api.html#algviz.svg_graph.SvgGraph.markNode) 等接口时，您需要传入一个表示 RGB 颜色值的三元组。为了方便使用，Algviz 中提供了一些预定义的颜色值（如：`algviz.color_red`），下面是颜色对照表：
 
 ![颜色对照表](https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@master/svgs/example_color_table.svg)
+
+[Vector]: https://algviz.readthedocs.io/en/latest/api.html#algviz.vector.Vector
+[Table]: https://algviz.readthedocs.io/en/latest/api.html#algviz.table.Table
+[linked list]: https://algviz.readthedocs.io/en/latest/api.html#module-algviz.linked_list
+[binary tree]: https://algviz.readthedocs.io/en/latest/api.html#algviz.tree.parseBinaryTree
+[tree]: https://algviz.readthedocs.io/en/latest/api.html#module-algviz.tree
+[graph]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.parseGraph
+[GraphNode]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.GraphNode
+[vector.ipynb]: https://github.com/zjl9959/algviz/blob/main/examples/vector.ipynb
+[table.ipynb]: https://github.com/zjl9959/algviz/blob/main/examples/table.ipynb
+[linked_list.ipynb]: https://github.com/zjl9959/algviz/blob/main/examples/linked_list.ipynb
+[tree.ipynb]: https://github.com/zjl9959/algviz/blob/main/examples/tree.ipynb
+[graph.ipynb]: https://github.com/zjl9959/algviz/blob/main/examples/graph.ipynb
+[vector.ipynb colab]: https://colab.research.google.com/drive/1RgAoKbiSBXdSvBg65pwu9pJp5bQL1pCs?usp=sharing
+[table.ipynb colab]: https://colab.research.google.com/drive/1GH6XgKDpUA2GKxiLm5tljp19wUvmnDxO?usp=sharing
+[linked_list.ipynb colab]: https://colab.research.google.com/drive/1rsg-6irXzQODPi6DUZhtu-pKq_r55hwV?usp=sharing
+[tree.ipynb colab]: https://colab.research.google.com/drive/138pnzwoS2vdhssZyTx-k5rwBQNb2Hi9N?usp=sharing
+[graph.ipynb colab]: https://colab.research.google.com/drive/14hF30-N9VGBb5-vkERPuURvmnB9VspU9?usp=sharing
