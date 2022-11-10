@@ -466,7 +466,7 @@ The cursor object supports common arithmetic operations:
 
 The comparison operations are also supported:
 
-`>`, `<`, `>=`, `<=`, `==`, `!=`。
+`>`, `<`, `>=`, `<=`, `==`, `!=`.
 
 If you want to update the cursor position to any integer, you need to use the `<<` operator.
 

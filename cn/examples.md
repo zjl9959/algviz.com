@@ -64,7 +64,7 @@ vec = viz.createVector(
     name = "Vector",            # 向量的显示名称；
     cell_size = (40, 40),       # 向量中基本单元格的显示长宽；
     histogram = False,          # 是否以条形图的形式显示；
-    show_index = True           # 是否显示下标数字；
+    show_index = True           # 是否显示下标数字。
 )
 viz.display()
 ```
@@ -156,7 +156,7 @@ tab = viz.createTable(
     data = None,                # 表格中的数据；
     name = "Table",             # 表格名称；
     cell_size = (40, 40),       # 单元格的长宽；
-    show_index = True           # 是否显示下标数字；
+    show_index = True           # 是否显示下标数字。
 )
 viz.display()
 ```
@@ -173,7 +173,8 @@ sum = 0
 for row in tab:
     for val in row:
         sum += val
-tab[1][1] = sum     # 通过"[]"操作符修改表格中的元素。
+# 通过"[]"操作符修改表格中的元素。
+tab[1][1] = sum
 viz.display(0.5)
 ```
 
@@ -256,7 +257,8 @@ viz.display()
 # 删除节点 1。
 head1_next = head1.next
 head1.next = head1_next.next
-forward_list.removeNode(head1_next)     # 这里将节点从拓扑图中删除。
+# 这里将节点从拓扑图中删除。
+forward_list.removeNode(head1_next)
 viz.display()
 # 新增节点 4。
 forward_list_node = algviz.ForwardLinkedListNode(4, head1.next.next)
@@ -290,12 +292,12 @@ viz.display()
 当树节点或节点之间的关系发生变化时，Algviz 会自动生成对应的动画，例如：
 
 ```python
-# 交换左右子树
+# 交换左右子树。
 temp = root1.left
 root1.left = root1.right
 root1.right = temp
 viz.display()
-# 节点 2 新增一个子节点
+# 节点 2 新增一个子节点。
 new_node = algviz.BinaryTreeNode('new')
 root1.right.right = new_node
 viz.display()
@@ -319,12 +321,12 @@ viz.display()
 
 ```python
 tree_info = {
-    0: [1, 2, 3],   # 节点 0 有三个子节点 1,2,3;
-    1: [4, 5],      # 节点 1 有两个子节点 4,5;
+    0: [1, 2, 3],   # 节点 0 有三个子节点 1, 2, 3；
+    1: [4, 5],      # 节点 1 有两个子节点 4, 5；
     2: [6]          # 节点 2 有一个子节点 6。
 }
 nodes_label = {
-    0: 'root',      # 将节点 0 命名为 root;
+    0: 'root',      # 将节点 0 命名为 root；
     3: 'n3'         # 将节点 3 命名为 n3。
 }
 root2 = algviz.parseTree(tree_info, nodes_label)
@@ -367,10 +369,10 @@ viz.display()
 #### 手动创建拓扑图
 
 ```python
-# 创建两个拓扑图节点 n1,n2
+# 创建两个拓扑图节点 n1, n2。
 n1 = algviz.GraphNode(val = "n1")
 n2 = algviz.GraphNode(val = "n2")
-# 添加两条边：（n1->n2,e1）,(n2->n1,e2)
+# 添加两条边：(n1->n2, e1), (n2->n1, e2)。
 n1.add(node=n2, edge="e1")
 n2.add(node=n1, edge="e2")
 graph1 = viz.createGraph(
@@ -441,8 +443,8 @@ viz.display()
 
 ```python
 i = viz.createCursor(
-    offset = 1,  # 光标的初始索引位置为 1
-    name = "i"   # 光标的名称为 i
+    offset = 1,  # 光标的初始索引位置为 1；
+    name = "i"   # 光标的名称为 i。
 )
 j = viz.createCursor(3, "j")
 ```
@@ -471,9 +473,9 @@ j = viz.createCursor(3, "j")
 *提示：一个向量或表格对象可以绑定多个光标对象！*
 
 ```python
-# 创建一个新的向量对象
+# 创建一个新的向量对象。
 vec2 = viz.createVector([0, 1, 2, 3], "Vector2", show_index=True)
-# 通过光标 i 依次访问向量中的元素
+# 通过光标 i 依次访问向量中的元素。
 while i < len(vec2):
     vec2[j] = vec2[i] + 1
     viz.display(1.0)
@@ -487,15 +489,15 @@ viz.display(1.0)
 ### 访问表格中元素
 
 ```python
-i << 0                      # 将光标 i 的位置设置为 0
-(r, c) = tab.shape()        # 使用前面创建的表格对象
-while i < r:                # 迭代访问表格中的每一行
-    while j < c:            # 迭代访问表格中的每一列
-        tab[i][j] = 0       # 更新当前访问的元素
+i << 0                      # 将光标 i 的位置设置为 0；
+(r, c) = tab.shape()        # 使用前面创建的表格对象；
+while i < r:                # 迭代访问表格中的每一行；
+    while j < c:            # 迭代访问表格中的每一列；
+        tab[i][j] = 0       # 更新当前访问的元素。
         viz.display(1.0)
-        j += 1              # 光标 j 移动到下一列
-    i += 1                  # 光标 i 移动到下一行
-    j << 0                  # 光标 j 移动到第一列
+        j += 1              # 光标 j 移动到下一列；
+    i += 1                  # 光标 i 移动到下一行；
+    j << 0                  # 光标 j 移动到第一列。
     viz.display()
 ```
 
