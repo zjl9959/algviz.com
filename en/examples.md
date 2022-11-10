@@ -445,8 +445,8 @@ The interface [Visualizer.createCursor](https://algviz.readthedocs.io/en/latest/
 
 ```python
 i = viz.createCursor(
-    offset = 1,  # 光标的初始索引位置为 1
-    name = "i"   # 光标的名称为 i
+    offset = 1,  # The initial index position of the cursor is 1.
+    name = "i"   # The name of the cursor is i.
 )
 j = viz.createCursor(3, "j")
 ```
