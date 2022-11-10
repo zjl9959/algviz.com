@@ -52,6 +52,14 @@
   
   
     {
+      "title"    : "Tutorial",
+      "url"      : "https://algviz.com/en/examples.html",
+      "keywords" : ""
+    } ,
+  
+  
+  
+    {
       "title"    : "主页",
       "url"      : "https://algviz.com/",
       "keywords" : ""
