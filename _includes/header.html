@@ -10,6 +10,22 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <script>
+      function relocate(url) {
+        let loc = window.location.pathname;
+        if (loc === '' || loc === '/') {
+          window.location = url;
+        }
+      }
+      let lang = window.navigator.language.toLocaleLowerCase() || 'zh';
+      if (lang.indexOf("zh-") != -1) {
+        relocate('index.html');
+      } else if (lang.indexOf('en') != -1) {
+        relocate('index_en.html');
+      } else {
+        relocate('index.html');
+      }
+    </script>
     <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}</title>
     <link rel="stylesheet" href="{{ assets_base_url }}/assets/vendor/primer-css/css/primer.css">
     <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/sections/repo-list.css">
