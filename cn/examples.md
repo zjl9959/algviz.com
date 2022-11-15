@@ -6,9 +6,9 @@ comments: false
 lang: zh
 ---
 
-本教程将教会您如何使用 Algviz 进行算法可视化编程，完整的接口定义请参考 [Algviz API](https://algviz.readthedocs.io/en/latest/api.html) 描述文档。下表列出了一些在 JupyterNotebook 中的使用例子作为参考：
+本教程将教会您如何使用 Algviz 进行算法可视化编程，完整的接口定义请参考 [Algviz API](https://algviz.readthedocs.io/en/latest/api.html) 描述文档。下表列出了一些在线版本的 JupyterNotebook 中的使用例子作为参考，您可以点击表格中的笔记链接并且直接在浏览器中运行它们！
 
-| 对象         |  Github 链接            | Google Colab 链接          |   简介                      |
+| 对象         |  MyBinder            | Google Colab          |   简介                      |
 | :----           | :------                 | :---------                 | :-------                           |
 | **[vector]**      | [vector.ipynb]          | [vector.ipynb colab]       | 向量对象的基础操作。 <br> 例如：`冒泡排序算法`。 |
 | **[table]**       | [table.ipynb]           | [table.ipynb colab]        | 表格对象的基本操作。  |
@@ -540,11 +540,11 @@ viz.display(1.0)
 [tree]: https://algviz.readthedocs.io/en/latest/api.html#module-algviz.tree
 [graph]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.parseGraph
 [GraphNode]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.GraphNode
-[vector.ipynb]: https://github.com/zjl9959/algviz/blob/main/examples/vector.ipynb
-[table.ipynb]: https://github.com/zjl9959/algviz/blob/main/examples/table.ipynb
-[linked_list.ipynb]: https://github.com/zjl9959/algviz/blob/main/examples/linked_list.ipynb
-[tree.ipynb]: https://github.com/zjl9959/algviz/blob/main/examples/tree.ipynb
-[graph.ipynb]: https://github.com/zjl9959/algviz/blob/main/examples/graph.ipynb
+[vector.ipynb]: https://hub.gke2.mybinder.org/user/zjl9959-algviz-0cxxr6l2/doc/tree/examples/vector.ipynb
+[table.ipynb]: https://hub.gke2.mybinder.org/user/zjl9959-algviz-0cxxr6l2/doc/tree/examples/table.ipynb
+[linked_list.ipynb]: https://hub.gke2.mybinder.org/user/zjl9959-algviz-0cxxr6l2/doc/tree/examples/linked_list.ipynb
+[tree.ipynb]: https://hub.gke2.mybinder.org/user/zjl9959-algviz-0cxxr6l2/doc/tree/examples/tree.ipynb
+[graph.ipynb]: https://hub.gke2.mybinder.org/user/zjl9959-algviz-0cxxr6l2/doc/tree/examples/graph.ipynb
 [vector.ipynb colab]: https://colab.research.google.com/drive/1RgAoKbiSBXdSvBg65pwu9pJp5bQL1pCs?usp=sharing
 [table.ipynb colab]: https://colab.research.google.com/drive/1GH6XgKDpUA2GKxiLm5tljp19wUvmnDxO?usp=sharing
 [linked_list.ipynb colab]: https://colab.research.google.com/drive/1rsg-6irXzQODPi6DUZhtu-pKq_r55hwV?usp=sharing
