@@ -6,16 +6,7 @@ comments: false
 lang: zh
 ---
 
-本教程将教会您如何使用 Algviz 进行算法可视化编程，完整的接口定义请参考 [Algviz API](https://algviz.readthedocs.io/en/latest/api.html) 描述文档。下表列出了一些在线版本的 JupyterNotebook 中的使用例子作为参考，您可以点击表格中的笔记链接并且直接在浏览器中运行它们！
-
-| 对象         |  MyBinder            | Google Colab          |   简介                      |
-| :----           | :------                 | :---------                 | :-------                           |
-| **[vector]**      | [vector.ipynb]          | [vector.ipynb colab]       | 向量对象的基础操作。 <br> 例如：`冒泡排序算法`。 |
-| **[table]**       | [table.ipynb]           | [table.ipynb colab]        | 表格对象的基本操作。  |
-| **[linked list]** | [linked_list.ipynb]     | [linked_list.ipynb colab]  | 使用单向链表和双向链表。 |
-| **[tree]**        | [tree.ipynb]            | [tree.ipynb colab]         | 使用二叉树和多叉树。 <br> 例如：`二叉树镜像算法` 和 `构造字典树`。 |
-| **[graph]**       | [graph.ipynb]           | [graph.ipynb colab]        | 使用拓扑图对象。 |
-
+本教程将教会您如何使用 Algviz 进行算法可视化编程，如果您想了解 Algviz 完整的接口定义，请参考 [Algviz API](https://algviz.readthedocs.io/en/latest/api.html) 描述文档。
 
 ## 可视化对象
 
@@ -532,21 +523,3 @@ viz.display(1.0)
 在调用 [Vector.mark](https://algviz.readthedocs.io/en/latest/api.html#algviz.vector.Vector.mark)、 [Table.mark](https://algviz.readthedocs.io/en/latest/api.html#algviz.table.Table.mark) 以及 [SvgGraph.markNode](https://algviz.readthedocs.io/en/latest/api.html#algviz.svg_graph.SvgGraph.markNode) 等接口时，您需要传入一个表示 RGB 颜色值的三元组。为了方便使用，Algviz 中提供了一些预定义的颜色值（如：`algviz.color_red`），下面是颜色对照表：
 
 ![颜色对照表](https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@master/svgs/example_color_table.svg)
-
-[Vector]: https://algviz.readthedocs.io/en/latest/api.html#algviz.vector.Vector
-[Table]: https://algviz.readthedocs.io/en/latest/api.html#algviz.table.Table
-[linked list]: https://algviz.readthedocs.io/en/latest/api.html#module-algviz.linked_list
-[binary tree]: https://algviz.readthedocs.io/en/latest/api.html#algviz.tree.parseBinaryTree
-[tree]: https://algviz.readthedocs.io/en/latest/api.html#module-algviz.tree
-[graph]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.parseGraph
-[GraphNode]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.GraphNode
-[vector.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fvector.ipynb
-[table.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftable.ipynb
-[linked_list.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Flinked_list.ipynb
-[tree.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftree.ipynb
-[graph.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fgraph.ipynb
-[vector.ipynb colab]: https://colab.research.google.com/drive/1RgAoKbiSBXdSvBg65pwu9pJp5bQL1pCs?usp=sharing
-[table.ipynb colab]: https://colab.research.google.com/drive/1GH6XgKDpUA2GKxiLm5tljp19wUvmnDxO?usp=sharing
-[linked_list.ipynb colab]: https://colab.research.google.com/drive/1rsg-6irXzQODPi6DUZhtu-pKq_r55hwV?usp=sharing
-[tree.ipynb colab]: https://colab.research.google.com/drive/138pnzwoS2vdhssZyTx-k5rwBQNb2Hi9N?usp=sharing
-[graph.ipynb colab]: https://colab.research.google.com/drive/14hF30-N9VGBb5-vkERPuURvmnB9VspU9?usp=sharing

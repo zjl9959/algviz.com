@@ -6,16 +6,7 @@ comments: false
 lang: en
 ---
 
-This tutorial will teach you how to use Algviz for algorithm visualization programming. For the complete interface definition, please refer to the [Algviz API](https://algviz.readthedocs.io/en/latest/api.html) description document. The table below lists the online Jupyter Notebook examples. You can click the notebook links in the table try them in your web browser.
-
-| Example         |  MyBinder            | Google Colab          |  Description                       |
-| :----           | :------                 | :---------                 | :-------                           |
-| **vector**      | [vector.ipynb]          | [vector.ipynb colab]       | Basic operations on [Vector] class. <br> Example of `bubble sort algorithm`. |
-| **table**       | [table.ipynb]           | [table.ipynb colab]        | Basic operations on [Table] class.  |
-| **linked list** | [linked_list.ipynb]     | [linked_list.ipynb colab]  | Create linked list and operate [ForwardLinkedNode], [DoublyLinkedNode] classes. |
-| **tree**        | [tree.ipynb]            | [tree.ipynb colab]         | Create [binary tree], [normal tree] <br> Operate [TreeNode], [BinaryTreeNode] classes. <br> Example of `mirror binary tree`. <br> Example of construct `trie tree`. |
-| **graph**       | [graph.ipynb]           | [graph.ipynb colab]        | Create [graph] and operate [GraphNode] class. |
-
+This tutorial will teach you how to use Algviz for algorithm visualization programming. For the complete interface definition, please refer to the [Algviz API](https://algviz.readthedocs.io/en/latest/api.html) description document. 
 
 ## Visualizer
 
@@ -536,24 +527,3 @@ viz.display(1.0)
 When you are calling interfaces such as [Vector.mark](https://algviz.readthedocs.io/en/latest/api.html#algviz.vector.Vector.mark), [Table.mark](https://algviz.readthedocs.io/en/latest/api.html#algviz.table.Table.mark), and [SvgGraph.markNode](https://algviz.readthedocs.io/en/latest/api.html#algviz.svg_graph.SvgGraph.markNode), you need to pass in a triple `(R, G, B)` representing the RGB color value. For convenience, Algviz provides some predefined color values (eg: `algviz.color_red`), the following is the color table:
 
 ![example_color_table](https://cdn.jsdelivr.net/gh/zjl9959/algviz-launch@master/svgs/example_color_table.svg)
-
-
-[Vector]: https://algviz.readthedocs.io/en/latest/api.html#algviz.vector.Vector
-[Table]: https://algviz.readthedocs.io/en/latest/api.html#algviz.table.Table
-[ForwardLinkedNode]: https://algviz.readthedocs.io/en/latest/api.html#algviz.linked_list.ForwardLinkedListNode
-[DoublyLinkedNode]: https://algviz.readthedocs.io/en/latest/api.html#algviz.linked_list.DoublyLinkedListNode
-[binary tree]: https://algviz.readthedocs.io/en/latest/api.html#algviz.tree.parseBinaryTree
-[normal tree]: https://algviz.readthedocs.io/en/latest/api.html#algviz.tree.parseTree
-[TreeNode]: https://algviz.readthedocs.io/en/latest/api.html#algviz.tree.TreeNode
-[graph]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.parseGraph
-[GraphNode]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.GraphNode
-[vector.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fvector.ipynb
-[table.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftable.ipynb
-[linked_list.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Flinked_list.ipynb
-[tree.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftree.ipynb
-[graph.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fgraph.ipynb
-[vector.ipynb colab]: https://colab.research.google.com/drive/1RgAoKbiSBXdSvBg65pwu9pJp5bQL1pCs?usp=sharing
-[table.ipynb colab]: https://colab.research.google.com/drive/1GH6XgKDpUA2GKxiLm5tljp19wUvmnDxO?usp=sharing
-[linked_list.ipynb colab]: https://colab.research.google.com/drive/1rsg-6irXzQODPi6DUZhtu-pKq_r55hwV?usp=sharing
-[tree.ipynb colab]: https://colab.research.google.com/drive/138pnzwoS2vdhssZyTx-k5rwBQNb2Hi9N?usp=sharing
-[graph.ipynb colab]: https://colab.research.google.com/drive/14hF30-N9VGBb5-vkERPuURvmnB9VspU9?usp=sharing

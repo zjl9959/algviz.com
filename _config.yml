@@ -87,6 +87,10 @@ navs:
     -
       href: /cn/index.html
       label: 博客
+
+    -
+      href: /cn/sponsor.html
+      label: 赞助
   en:
     -
       href: /index_en.html
@@ -95,6 +99,10 @@ navs:
     -
       href: /en/index.html
       label: Blog
+
+    -
+      href: /en/sponsor.html
+      label: Donate
 
 
 ####################
