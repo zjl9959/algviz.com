@@ -34,6 +34,9 @@
     <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/posts/index.min.css">
     <link rel="stylesheet" href="{{ assets_base_url }}/assets/vendor/octicons/octicons/octicons.css">
     <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/pages/index.min.css">
+    {% if site.components.share.enabled %}
+      <link rel="stylesheet" href="{{ assets_base_url }}/assets/vendor/share.js/dist/css/share.min.css">
+    {% endif %}
     <!-- Latest compiled and minified CSS -->
     {% for css in page.css %}
     <link rel="stylesheet" href="{{ assets_base_url }}/assets/css/{{css}}">

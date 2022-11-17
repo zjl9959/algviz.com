@@ -45,8 +45,18 @@
             </div>
         </div>
 
-        <div style="margin-top:10pt;margin-left:10pt;">
-            <div class="copyright">© {{ site.since }} <span title="algviz">algviz</span></div>
+        <div style="margin:15pt;">
+            <div style="display:inline" class="copyright">© {{ site.since }} <span title="algviz">algviz</span></div>
+            {% if site.components.share.enabled %}
+                <div class="share" style="display:inline;float:right;margin-top:-12pt">
+                    {% if page.lang == "zh" %}
+                        <div class="share-component" data-disabled='twitter,facebook,linkedin'></div>
+                    {% elsif page.lang == "en" %}
+                        <div class="share-component" data-disabled='qq,douban,qzone,weibo,wechat'></div>
+                    {% endif %}
+                </div>
+                <script src="{{ assets_base_url }}/assets/vendor/share.js/dist/js/share.min.js"></script>
+            {% endif %}
         </div>
       </div>
   </footer>

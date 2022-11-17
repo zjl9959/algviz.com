@@ -112,6 +112,9 @@ components:
     word_count:
         enabled: true
 
+    share:
+        enabled: true
+
 
 ###################
 #    Google       #
