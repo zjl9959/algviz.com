@@ -12,13 +12,13 @@ There are some websites that support running Jupyter Notebook online,
 such as [Mybindler](https://mybinder.org/), [Google Colab](https://colab.research.google.com/), [Kaggle](https://www.kaggle.com/), and so on.
 The table below lists some online Jupyter Notebook examples. You can click the notebook links in the table and try it in your browser.
 
-| Example         |  MyBinder            | Google Colab          |  Description                       |
-| :----           | :------                 | :---------                 | :-------                           |
-| **vector**      | [vector.ipynb]          | [vector.ipynb colab]       | Basic operations on [Vector] class. <br> Example of `bubble sort algorithm`. |
-| **table**       | [table.ipynb]           | [table.ipynb colab]        | Basic operations on [Table] class.  |
-| **linked list** | [linked_list.ipynb]     | [linked_list.ipynb colab]  | Create linked list and operate [ForwardLinkedNode], [DoublyLinkedNode] classes. |
-| **tree**        | [tree.ipynb]            | [tree.ipynb colab]         | Create [binary tree], [normal tree] <br> Operate [TreeNode], [BinaryTreeNode] classes. <br> Example of `mirror binary tree`. <br> Example of construct `trie tree`. |
-| **graph**       | [graph.ipynb]           | [graph.ipynb colab]        | Create [graph] and operate [GraphNode] class. |
+| Example         |  MyBinder      |   Kaggle      | Google Colab          |  Description                       |
+| :----           | :------       | :-------          | :---------                 | :-------                           |
+| **vector**      | [vector.ipynb binder]    |   [vector.ipynb kaggle]     | [vector.ipynb colab]       | Basic operations on [Vector] class. <br> Example of `bubble sort algorithm`. |
+| **table**       | [table.ipynb binder]   |    [table.ipynb kaggle]       | [table.ipynb colab]        | Basic operations on [Table] class.  |
+| **linked list** | [linked_list.ipynb binder]  |  [linked_list.ipynb kaggle]    | [linked_list.ipynb colab]  | Create linked list and operate [ForwardLinkedNode], [DoublyLinkedNode] classes. |
+| **tree**        | [tree.ipynb binder]    |     [tree.ipynb kaggle]      | [tree.ipynb colab]         | Create [binary tree], [normal tree] <br> Operate [TreeNode], [BinaryTreeNode] classes. <br> Example of `mirror binary tree`. <br> Example of construct `trie tree`. |
+| **graph**       | [graph.ipynb binder]    |    [graph.ipynb kaggle]       | [graph.ipynb colab]        | Create [graph] and operate [GraphNode] class. |
 
 
 ## Local installation
@@ -99,11 +99,16 @@ After the installation is complete, you can refer to the [tutorial]({{ site.url 
 [TreeNode]: https://algviz.readthedocs.io/en/latest/api.html#algviz.tree.TreeNode
 [graph]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.parseGraph
 [GraphNode]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.GraphNode
-[vector.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fvector.ipynb
-[table.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftable.ipynb
-[linked_list.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Flinked_list.ipynb
-[tree.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftree.ipynb
-[graph.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fgraph.ipynb
+[vector.ipynb binder]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fvector.ipynb
+[table.ipynb binder]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftable.ipynb
+[linked_list.ipynb binder]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Flinked_list.ipynb
+[tree.ipynb binder]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftree.ipynb
+[graph.ipynb binder]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fgraph.ipynb
+[vector.ipynb kaggle]: https://www.kaggle.com/code/algviz/vector-example
+[table.ipynb kaggle]: https://www.kaggle.com/algviz/table-example
+[linked_list.ipynb kaggle]: https://www.kaggle.com/algviz/linked-list-example
+[tree.ipynb kaggle]: https://www.kaggle.com/algviz/tree-example
+[graph.ipynb kaggle]: https://www.kaggle.com/algviz/graph-example
 [vector.ipynb colab]: https://colab.research.google.com/drive/1RgAoKbiSBXdSvBg65pwu9pJp5bQL1pCs?usp=sharing
 [table.ipynb colab]: https://colab.research.google.com/drive/1GH6XgKDpUA2GKxiLm5tljp19wUvmnDxO?usp=sharing
 [linked_list.ipynb colab]: https://colab.research.google.com/drive/1rsg-6irXzQODPi6DUZhtu-pKq_r55hwV?usp=sharing

@@ -7,7 +7,7 @@
 
 <footer class="container">
       <div class="site-footer" role="contentinfo">
-        <div style="display:flex;flex-direction:row">
+        <div style="display:flex;flex-direction:row;margin-left:-20pt;">
             <div style="display:flex;flex-direction:column;flex-grow:1;align-items:center">
                 {% if page.lang == "zh" %}
                     <span style="margin-bottom: 2pt;"><b>站内导航</b></span>
@@ -50,7 +50,7 @@
             {% if site.components.share.enabled %}
                 <div class="share" style="display:inline;float:right;margin-top:-12pt">
                     {% if page.lang == "zh" %}
-                        <div class="share-component" data-disabled='twitter,facebook,linkedin'></div>
+                        <div class="share-component" data-disabled='qq,twitter,facebook,linkedin'></div>
                     {% elsif page.lang == "en" %}
                         <div class="share-component" data-disabled='qq,douban,qzone,weibo,wechat'></div>
                     {% endif %}

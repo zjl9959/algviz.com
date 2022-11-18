@@ -14,13 +14,13 @@ lang: zh
 （[Kaggle](https://www.kaggle.com/) *[需要注册]*）等网站。
 您可以点击下面的笔记链接，免安装直接体验 algviz 的强大功能！
 
-| 对象         |  MyBinder            | Google Colab          |   简介                      |
-| :----           | :------                 | :---------                 | :-------                           |
-| **[vector]**      | [vector.ipynb]          | [vector.ipynb colab]       | 向量对象的基础操作。 <br> 例如：`冒泡排序算法`。 |
-| **[table]**       | [table.ipynb]           | [table.ipynb colab]        | 表格对象的基本操作。  |
-| **[linked list]** | [linked_list.ipynb]     | [linked_list.ipynb colab]  | 使用单向链表和双向链表。 |
-| **[tree]**        | [tree.ipynb]            | [tree.ipynb colab]         | 使用二叉树和多叉树。 <br> 例如：`二叉树镜像算法` 和 `构造字典树`。 |
-| **[graph]**       | [graph.ipynb]           | [graph.ipynb colab]        | 使用拓扑图对象。 |
+| 对象         |  MyBinder        |  Kaggle     | Google Colab          |   简介                      |
+| :----           | :------        | :-------         | :---------                 | :-------                           |
+| **[vector]**      | [vector.ipynb binder]    |    [vector.ipynb kaggle]     | [vector.ipynb colab]       | 向量对象的基础操作。 <br> 例如：`冒泡排序算法`。 |
+| **[table]**       | [table.ipynb binder]     |    [table.ipynb kaggle]     | [table.ipynb colab]        | 表格对象的基本操作。  |
+| **[linked list]** | [linked_list.ipynb binder]  |  [linked_list.ipynb kaggle]    | [linked_list.ipynb colab]  | 使用单向链表和双向链表。 |
+| **[tree]**        | [tree.ipynb binder]      |     [tree.ipynb kaggle]     | [tree.ipynb colab]         | 使用二叉树和多叉树。 <br> 例如：`二叉树镜像算法` 和 `构造字典树`。 |
+| **[graph]**       | [graph.ipynb binder]     |    [graph.ipynb kaggle]     | [graph.ipynb colab]        | 使用拓扑图对象。 |
 
 ## 本地安装
 
@@ -97,11 +97,16 @@ python tests/run.py
 [tree]: https://algviz.readthedocs.io/en/latest/api.html#module-algviz.tree
 [graph]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.parseGraph
 [GraphNode]: https://algviz.readthedocs.io/en/latest/api.html#algviz.graph.GraphNode
-[vector.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fvector.ipynb
-[table.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftable.ipynb
-[linked_list.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Flinked_list.ipynb
-[tree.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftree.ipynb
-[graph.ipynb]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fgraph.ipynb
+[vector.ipynb binder]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fvector.ipynb
+[table.ipynb binder]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftable.ipynb
+[linked_list.ipynb binder]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Flinked_list.ipynb
+[tree.ipynb binder]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Ftree.ipynb
+[graph.ipynb binder]: https://mybinder.org/v2/gh/zjl9959/algviz/main?labpath=examples%2Fgraph.ipynb
+[vector.ipynb kaggle]: https://www.kaggle.com/code/algviz/vector-example
+[table.ipynb kaggle]: https://www.kaggle.com/algviz/table-example
+[linked_list.ipynb kaggle]: https://www.kaggle.com/algviz/linked-list-example
+[tree.ipynb kaggle]: https://www.kaggle.com/algviz/tree-example
+[graph.ipynb kaggle]: https://www.kaggle.com/algviz/graph-example
 [vector.ipynb colab]: https://colab.research.google.com/drive/1RgAoKbiSBXdSvBg65pwu9pJp5bQL1pCs?usp=sharing
 [table.ipynb colab]: https://colab.research.google.com/drive/1GH6XgKDpUA2GKxiLm5tljp19wUvmnDxO?usp=sharing
 [linked_list.ipynb colab]: https://colab.research.google.com/drive/1rsg-6irXzQODPi6DUZhtu-pKq_r55hwV?usp=sharing
