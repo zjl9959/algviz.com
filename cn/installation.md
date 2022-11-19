@@ -14,6 +14,8 @@ lang: zh
 （[Kaggle](https://www.kaggle.com/) *[需要注册]*）等网站。
 您可以点击下面的笔记链接，免安装直接体验 algviz 的强大功能！
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/zjl9959/algviz-launch)
+
 | 对象         |  MyBinder        |  Kaggle     | Google Colab          |   简介                      |
 | :----           | :------        | :-------         | :---------                 | :-------                           |
 | **[vector]**      | [vector.ipynb binder]    |    [vector.ipynb kaggle]     | [vector.ipynb colab]       | 向量对象的基础操作。 <br> 例如：`冒泡排序算法`。 |

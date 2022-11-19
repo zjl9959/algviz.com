@@ -75,4 +75,4 @@ print("fib(4)={}".format(fib(4)))
 
 + To use the RecursiveTree class, you need to install [algviz 0.1.6](https://pypi.org/project/algviz/0.1.6/) or higher version. For environment configuration, please refer to: [Installation]({{ site.url }}/en/installation.html).
 
-+ *Algviz is an open source project, please give me a star on my [Github](https://github.com/zjl9959/algviz) if you are interested!*
++ *Algviz is an open source project, please give me a star on my [GitHub](https://github.com/zjl9959/algviz) if you are interested!*
