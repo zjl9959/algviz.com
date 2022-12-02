@@ -12,14 +12,6 @@
   
   
     {
-      "title"    : "关于 Algviz",
-      "url"      : "https://algviz.com/cn/about.html",
-      "keywords" : ""
-    } ,
-  
-  
-  
-    {
       "title"    : "About Algviz",
       "url"      : "https://algviz.com/en/about.html",
       "keywords" : ""
@@ -28,9 +20,9 @@
   
   
     {
-      "title"    : "分类",
-      "url"      : "https://algviz.com/cn/categories.html",
-      "keywords" : "分类"
+      "title"    : "关于 Algviz",
+      "url"      : "https://algviz.com/cn/about.html",
+      "keywords" : ""
     } ,
   
   
@@ -44,9 +36,9 @@
   
   
     {
-      "title"    : "使用教程",
-      "url"      : "https://algviz.com/cn/examples.html",
-      "keywords" : ""
+      "title"    : "分类",
+      "url"      : "https://algviz.com/cn/categories.html",
+      "keywords" : "分类"
     } ,
   
   
@@ -54,6 +46,14 @@
     {
       "title"    : "Tutorial",
       "url"      : "https://algviz.com/en/examples.html",
+      "keywords" : ""
+    } ,
+  
+  
+  
+    {
+      "title"    : "使用教程",
+      "url"      : "https://algviz.com/cn/examples.html",
       "keywords" : ""
     } ,
   
@@ -76,14 +76,6 @@
   
   
     {
-      "title"    : "安装步骤",
-      "url"      : "https://algviz.com/cn/installation.html",
-      "keywords" : ""
-    } ,
-  
-  
-  
-    {
       "title"    : "Installation Steps",
       "url"      : "https://algviz.com/en/installation.html",
       "keywords" : ""
@@ -92,28 +84,12 @@
   
   
     {
-      "title"    : "算法分享",
-      "url"      : "https://algviz.com/cn/notebooks.html",
+      "title"    : "安装步骤",
+      "url"      : "https://algviz.com/cn/installation.html",
       "keywords" : ""
     } ,
   
   
-  
-    {
-      "title"    : "Algorithm Sharing",
-      "url"      : "https://algviz.com/en/notebooks.html",
-      "keywords" : ""
-    } ,
-  
-  
-  
-  
-  
-    {
-      "title"    : "赞助",
-      "url"      : "https://algviz.com/cn/sponsor.html",
-      "keywords" : ""
-    } ,
   
   
   
@@ -125,19 +101,27 @@
   
   
   
-  
-  
     {
-      "title"    : "博客",
-      "url"      : "https://algviz.com/cn/index.html",
+      "title"    : "赞助",
+      "url"      : "https://algviz.com/cn/sponsor.html",
       "keywords" : ""
     } ,
+  
+  
   
   
   
     {
       "title"    : "Blogs",
       "url"      : "https://algviz.com/en/index.html",
+      "keywords" : ""
+    } ,
+  
+  
+  
+    {
+      "title"    : "博客",
+      "url"      : "https://algviz.com/cn/index.html",
       "keywords" : ""
     } ,
   
