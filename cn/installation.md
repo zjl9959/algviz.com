@@ -6,26 +6,6 @@ comments: false
 lang: zh
 ---
 
-## 网页版体验
-
-有一些网站支持在线运行 Jupyter Notebook，例如：
-（[Mybindler](https://mybinder.org/) *[无需注册] [启动较慢]*）、
-（[Google Colab](https://colab.research.google.com/) *[需要注册]*）、
-（[Kaggle](https://www.kaggle.com/) *[需要注册]*）等网站。
-您可以点击下面的笔记链接，免安装直接体验 algviz 的强大功能！
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/zjl9959/algviz-launch)
-
-| 对象         |  MyBinder        |  Kaggle     | Google Colab          |   简介                      |
-| :----           | :------        | :-------         | :---------                 | :-------                           |
-| **[vector]**      | [vector.ipynb binder]    |    [vector.ipynb kaggle]     | [vector.ipynb colab]       | 向量对象的基础操作。 <br> 例如：`冒泡排序算法`。 |
-| **[table]**       | [table.ipynb binder]     |    [table.ipynb kaggle]     | [table.ipynb colab]        | 表格对象的基本操作。  |
-| **[linked list]** | [linked_list.ipynb binder]  |  [linked_list.ipynb kaggle]    | [linked_list.ipynb colab]  | 使用单向链表和双向链表。 |
-| **[tree]**        | [tree.ipynb binder]      |     [tree.ipynb kaggle]     | [tree.ipynb colab]         | 使用二叉树和多叉树。 <br> 例如：`二叉树镜像算法` 和 `构造字典树`。 |
-| **[graph]**       | [graph.ipynb binder]     |    [graph.ipynb kaggle]     | [graph.ipynb colab]        | 使用拓扑图对象。 |
-
-## 本地安装
-
 在开始安装之前，请先**检查您的 Python 版本号是否大于等于 3.7**。
 如果小于的话，请更新您的 Python 版本！
 之后请更新您的 pip 版本至最新版：
@@ -34,37 +14,31 @@ lang: zh
 python -m pip install --upgrade pip
 ```
 
-### 第一步：安装 Jupyter Notebook
+## 第一步：安装 Jupyter
 
 您可以选择以下任意一种方式进行安装：
 
-#### 方式一：Jupyter
+1. **官方版本**：参考 Jupyter 官方提供的 [安装教程](https://jupyter.org/install)：
 
-参考 Jupyter 官方提供的 [安装教程](https://jupyter.org/install)：
+    ```shell
+    pip install jupyterlab
+    ```
+    或是
+    ```shell
+    pip install notebook
+    ```
 
-```shell
-pip install jupyterlab
-```
-或是
-```shell
-pip install notebook
-```
+2. **VSCode 插件**：使用 [VSCode](https://code.visualstudio.com/) 提供的 [Jupyter 拓展插件](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)。
 
-#### 方式二：VSCode
+3. **Anaconda**：安装 [Anaconda](https://docs.anaconda.com/anaconda/install/index.html)，使用其自带的 Jupyter Notebook。
 
-使用 [VSCode](https://code.visualstudio.com/) 提供的 [Jupyter 拓展插件](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)。
-
-#### 方式三：Anaconda
-
-安装 [Anaconda](https://docs.anaconda.com/anaconda/install/index.html)，使用其自带的 Jupyter Notebook。
-
-### 第二步：安装 Graphviz
+## 第二步：安装 Graphviz
 
 您可以直接从 [Graphviz](https://graphviz.org/download/) 的官方网站免费下载安装。
 
 *<font color="#FF0000">安装完成后，请将 Graphviz 的可执行文件路径添加到系统的环境变量中！</font>*
 
-### 第三步：安装 Algviz
+## 第三步：安装 Algviz
 
 ```shell
 pip install algviz

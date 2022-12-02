@@ -6,25 +6,6 @@ comments: false
 lang: en
 ---
 
-## Try algviz online
-
-There are some websites that support running Jupyter Notebook online,
-such as [Mybindler](https://mybinder.org/), [Google Colab](https://colab.research.google.com/), [Kaggle](https://www.kaggle.com/), and so on.
-The table below lists some online Jupyter Notebook examples. You can click the notebook links in the table and try it in your browser.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/zjl9959/algviz-launch)
-
-| Example         |  MyBinder      |   Kaggle      | Google Colab          |  Description                       |
-| :----           | :------       | :-------          | :---------                 | :-------                           |
-| **vector**      | [vector.ipynb binder]    |   [vector.ipynb kaggle]     | [vector.ipynb colab]       | Basic operations on [Vector] class. <br> Example of `bubble sort algorithm`. |
-| **table**       | [table.ipynb binder]   |    [table.ipynb kaggle]       | [table.ipynb colab]        | Basic operations on [Table] class.  |
-| **linked list** | [linked_list.ipynb binder]  |  [linked_list.ipynb kaggle]    | [linked_list.ipynb colab]  | Create linked list and operate [ForwardLinkedNode], [DoublyLinkedNode] classes. |
-| **tree**        | [tree.ipynb binder]    |     [tree.ipynb kaggle]      | [tree.ipynb colab]         | Create [binary tree], [normal tree] <br> Operate [TreeNode], [BinaryTreeNode] classes. <br> Example of `mirror binary tree`. <br> Example of construct `trie tree`. |
-| **graph**       | [graph.ipynb binder]    |    [graph.ipynb kaggle]       | [graph.ipynb colab]        | Create [graph] and operate [GraphNode] class. |
-
-
-## Local installation
-
 Before starting the installation, please check that your **Python version >=3.7**.
 If not, please update your Python version!
 After that please update your pip version to the latest version:
@@ -33,37 +14,31 @@ After that please update your pip version to the latest version:
 python -m pip install --upgrade pip
 ```
 
-### Step1: Install Jupyter Notebook
+## Step1: Install Jupyter
 
 You can choose any of the following ways to install:
 
-#### Method one: Jupyter
+1. **Official Jupyter**: refer to the [official installation tutorial](https://jupyter.org/install) provided by Jupyter:
 
-Refer to the [official installation tutorial](https://jupyter.org/install) provided by Jupyter:
+    ```shell
+    pip install jupyterlab
+    ```
+    or
+    ```shell
+    pip install notebook
+    ```
 
-```shell
-pip install jupyterlab
-```
-or
-```shell
-pip install notebook
-```
+2. **VSCode extension**: use the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) provided by [VSCode](https://code.visualstudio.com/).
 
-#### Method two: VSCode
+3. **Anaconda**: install [Anaconda](https://docs.anaconda.com/anaconda/install/index.html) and use the built-in Jupyter Notebook in it.
 
-Use the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) provided by [VSCode](https://code.visualstudio.com/).
-
-#### Method three: Anaconda
-
-Install [Anaconda](https://docs.anaconda.com/anaconda/install/index.html) and use the built-in Jupyter Notebook in it.
-
-### Step2: Install Graphviz
+## Step2: Install Graphviz
 
 You can download and install it for free from the official website of [Graphviz](https://graphviz.org/download/).
 
 *<font color="#FF0000">Once installed, add the Graphviz executable path to your system's environment variables!</font>*
 
-### Step3: Install Algviz
+## Step3: Install Algviz
 
 ```shell
 pip install algviz
@@ -71,7 +46,7 @@ pip install algviz
 
 ------
 
-## Installation verification
+## Verification
 
 To make sure you have successfully installed algviz,
 you can download the [test codes](https://github.com/zjl9959/algviz/tree/main/tests) from Github.

@@ -32,24 +32,24 @@ excerpt: 冒泡排序是大家接触的比较多的一种排序算法，因算�
 import algviz
 
 def bubble_sort(data):
-    viz = algviz.Visualizer(2)
-    vector = viz.createVector(data, cell_size=(40, 160), show_index=False, histogram=True)
-    i = viz.createCursor(name='i')
-    j = viz.createCursor(name='j')
-    for e in range(len(vector)):
-        i << 0; j << 1
-        while j < len(vector) - e:
-            viz.display(1.0)
-            if vector[i] > vector[j]:
-                vector.mark(algviz.color_red, i); vector.mark(algviz.color_green, j); viz.display(1.0)
-                vector.swap(i, j); viz.display()
+    viz = algviz.Visualizer(0.5)
+    vector = viz.createVector(data, cell_size=(40, 160), histogram=True)
+    for i in range(len(vector)):
+        for j in range(len(vector)-i-1):
+            if vector[j] > vector[j+1]:
+                vector.mark(algviz.cRed, j)
+                vector.mark(algviz.cGreen, j+1)
+                viz.display()
+                vector.swap(j, j+1)
             else:
-                vector.mark(algviz.color_red, j); vector.mark(algviz.color_green, i); viz.display(1.0)
-            i += 1; j += 1
-        vector.mark(algviz.color_gray, len(vector)-e-1, hold=True)
-    vector.removeMark(algviz.color_gray); viz.removeCursor(i); viz.removeCursor(j); viz.display()
+                vector.mark(algviz.cRed, j+1)
+                vector.mark(algviz.cGreen, j)
+            viz.display()
+        vector.mark(algviz.cGray, len(vector)-i-1, hold=True)
+    vector.removeMark(algviz.cGray)
+    viz.display()
 
-bubble_sort([5, 3, -2, 3, -1, 1, 4])
+bubble_sort([5, 4, -2, 1, -1, 3])
 ```
 
 *您可以在本地安装 algviz 后直接运行该代码片段！环境配置请参考：[安装步骤]({{ site.url }}/cn/installation.html)*
