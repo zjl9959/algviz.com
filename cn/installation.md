@@ -44,6 +44,8 @@ python -m pip install --upgrade pip
 pip install algviz
 ```
 
+*<font color="#FF0000">对于 Windows 用户，您需要额外安装 `pywin32` 库，请执行  `pip install pywin32` 命令！</font>*
+
 ------
 
 ## 安装验证

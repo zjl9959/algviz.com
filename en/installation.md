@@ -44,6 +44,8 @@ You can download and install it for free from the official website of [Graphviz]
 pip install algviz
 ```
 
+*<font color="#FF0000">For `Windows` users, you need to install the `pywin32` library additionally, please execute the `pip install pywin32` command!</font>*
+
 ------
 
 ## Verification

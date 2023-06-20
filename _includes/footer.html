@@ -24,9 +24,11 @@
             <div style="display:flex;flex-direction:column;flex-grow:1;align-items:center">
                 {% if page.lang == "zh" %}
                     <span style="margin-bottom: 2pt;"><b>联系方式</b></span>
+                    <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=NYzoqZd6B8sryXf0S8o1uv72b_p2M5ai&authKey=qTbFUbVoI%2F8RWZVmlabPkuBHnuY2RzywEnKeNZlV8dOhcdcKY%2BoiYnPklmdfpwlE&noverify=0&group_code=334605370" title="QQ"> QQ群</a>
                     <a href="mailto: {{ site.email }}" title="邮箱"><span class="octicon octicon-mail"></span> 邮箱</a>
                 {% elsif page.lang == "en" %}
                     <span style="margin-bottom: 2pt;"><b>Contact</b></span>
+                    <a href="https://t.me/+mvF8Sivxr3thZWY1" title="Telegram"> Telegram</a>
                     <a href="mailto: {{ site.url }}{{ nav.href }}" title="Email"><span class="octicon octicon-mail"></span> Email</a>
                 {% endif %}
                 <a href="{{ site.url }}{{ site.subscribe_rss }}"><span class="octicon octicon-rss"></span> RSS</a>
