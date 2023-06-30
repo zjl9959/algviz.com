@@ -48,7 +48,7 @@ pip install algviz
 
 ------
 
-## Verification
+## [Optional] Verification
 
 To make sure you have successfully installed algviz,
 you can download the [test codes](https://github.com/zjl9959/algviz/tree/main/tests) from Github.

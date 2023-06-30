@@ -48,7 +48,7 @@ pip install algviz
 
 ------
 
-## 安装验证
+## 【可选】安装验证
 
 要验证 algviz 是否安装成功，您可以从 Github 下载单元测试[代码](https://github.com/zjl9959/algviz/tree/main/tests)，然后执行命令：
 
