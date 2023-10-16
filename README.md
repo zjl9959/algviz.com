@@ -1,1 +1,1 @@
-**Visit [algviz.com](https://algviz.com) for more information!**
+**Visit [algviz.com](https://zjl9959.github.io/algviz) for more information!**
