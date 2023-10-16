@@ -16,7 +16,7 @@ keywords:
   en: Algorithm visualization Python animation data structure
 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://algviz.com"
+url: "https://zjl9959.github.io/algviz"
 lang: zh    # options: [zh, en]
 timezone: Asia/Shanghai
 encoding: "utf-8"
