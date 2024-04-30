@@ -12,14 +12,6 @@
   
   
     {
-      "title"    : "关于 Algviz",
-      "url"      : "https://zjl9959.github.io/algviz/cn/about.html",
-      "keywords" : ""
-    } ,
-  
-  
-  
-    {
       "title"    : "About Algviz",
       "url"      : "https://zjl9959.github.io/algviz/en/about.html",
       "keywords" : ""
@@ -28,9 +20,9 @@
   
   
     {
-      "title"    : "分类",
-      "url"      : "https://zjl9959.github.io/algviz/cn/categories.html",
-      "keywords" : "分类"
+      "title"    : "关于 Algviz",
+      "url"      : "https://zjl9959.github.io/algviz/cn/about.html",
+      "keywords" : ""
     } ,
   
   
@@ -44,9 +36,9 @@
   
   
     {
-      "title"    : "使用教程",
-      "url"      : "https://zjl9959.github.io/algviz/cn/examples.html",
-      "keywords" : ""
+      "title"    : "分类",
+      "url"      : "https://zjl9959.github.io/algviz/cn/categories.html",
+      "keywords" : "分类"
     } ,
   
   
@@ -54,6 +46,14 @@
     {
       "title"    : "Tutorial",
       "url"      : "https://zjl9959.github.io/algviz/en/examples.html",
+      "keywords" : ""
+    } ,
+  
+  
+  
+    {
+      "title"    : "使用教程",
+      "url"      : "https://zjl9959.github.io/algviz/cn/examples.html",
       "keywords" : ""
     } ,
   
@@ -76,14 +76,6 @@
   
   
     {
-      "title"    : "安装步骤",
-      "url"      : "https://zjl9959.github.io/algviz/cn/installation.html",
-      "keywords" : ""
-    } ,
-  
-  
-  
-    {
       "title"    : "Installation Steps",
       "url"      : "https://zjl9959.github.io/algviz/en/installation.html",
       "keywords" : ""
@@ -91,13 +83,13 @@
   
   
   
-  
-  
     {
-      "title"    : "赞助",
-      "url"      : "https://zjl9959.github.io/algviz/cn/sponsor.html",
+      "title"    : "安装步骤",
+      "url"      : "https://zjl9959.github.io/algviz/cn/installation.html",
       "keywords" : ""
     } ,
+  
+  
   
   
   
@@ -109,19 +101,27 @@
   
   
   
-  
-  
     {
-      "title"    : "博客",
-      "url"      : "https://zjl9959.github.io/algviz/cn/index.html",
+      "title"    : "赞助",
+      "url"      : "https://zjl9959.github.io/algviz/cn/sponsor.html",
       "keywords" : ""
     } ,
+  
+  
   
   
   
     {
       "title"    : "Blogs",
       "url"      : "https://zjl9959.github.io/algviz/en/index.html",
+      "keywords" : ""
+    } ,
+  
+  
+  
+    {
+      "title"    : "博客",
+      "url"      : "https://zjl9959.github.io/algviz/cn/index.html",
       "keywords" : ""
     } ,
   
