@@ -140,12 +140,12 @@
             {% endfor %}
             {% if page.class == "home" %}
               {% if page.subtype == "blog" %}
-                <a href="{{ site.url }}/en/index.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
+                <a href="{{ site.url }}/en/index.html" class="site-header-nav-item"><img src="{{ assets_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
               {% else %}
-                <a href="{{ site.url }}/index_en.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
+                <a href="{{ site.url }}/index_en.html" class="site-header-nav-item"><img src="{{ assets_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
               {% endif %}
             {% else %}
-              <a href="{{ site.url }}/en/{{ page.url | remove_first: "/cn/" }}" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
+              <a href="{{ site.url }}/en/{{ page.url | remove_first: "/cn/" }}" class="site-header-nav-item"><img src="{{ assets_base_url }}/assets/img/flag-us.svg" class="site-header-nav-flag"></a>
             {% endif %}
           {% elsif page.lang == "en" %}
             {% for nav in site.navs.en %}
@@ -153,12 +153,12 @@
             {% endfor %}
             {% if page.class == "home" %}
               {% if page.subtype == "blog" %}
-              <a href="{{ site.url }}/cn/{{ page.url | remove_first: "/en/" }}" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
+              <a href="{{ site.url }}/cn/{{ page.url | remove_first: "/en/" }}" class="site-header-nav-item"><img src="{{ assets_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
               {% else %}
-                <a href="{{ site.url }}/index.html" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
+                <a href="{{ site.url }}/index.html" class="site-header-nav-item"><img src="{{ assets_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
               {% endif %}
             {% else %}
-              <a href="{{ site.url }}/cn/{{ page.url | remove_first: "/en/" }}" class="site-header-nav-item"><img src="{{ asset_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
+              <a href="{{ site.url }}/cn/{{ page.url | remove_first: "/en/" }}" class="site-header-nav-item"><img src="{{ assets_base_url }}/assets/img/flag-cn.svg" class="site-header-nav-flag"></a>
             {% endif %}
           {% endif %}
       </nav>
